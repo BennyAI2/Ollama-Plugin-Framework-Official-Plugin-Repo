@@ -33,7 +33,7 @@
         "ollama:models:delete"
       ],
       "entry_url": "https://raw.githubusercontent.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo/main/plugins/com.opf.local-models-manager/index.js",
-      "sha256": "dd7f2d7aecc974ecd79854a7f771fd80c7c02f34f89f1bf7a0aabaa262d6bceb",
+      "sha256": "e87b5e9aaee45e84528c60adc9a80345324981f347a03e7607c79eabb3db7c3d",
       "ai_security_attestation": {
         "status": "PASSED",
         "auditors": ["openai-frontier-security-auditor-v1", "static-ast-guard-v1"],

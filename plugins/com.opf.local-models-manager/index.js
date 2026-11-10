@@ -2,6 +2,7 @@
  * OPF Official Plugin: Local Models Library (com.opf.local-models-manager)
  * Dynamically downloaded and executed from the OPF Official Plugin Repo when installed.
  * Registers a "Models" navigation item in the left-hand sidebar via window.OPF.registerSidebarPage().
+ * Uses 100% pure ASCII + inline SVG icons to guarantee zero character encoding issues.
  */
 
 (function() {
@@ -40,6 +41,7 @@
     error: null,
     models: [],
     remoteDigests: {},
+    simOutdated: {},
     updatingModel: null,
     updateStatusText: '',
     confirmRemoveModel: null
@@ -58,7 +60,7 @@
       const parts = modelName.split(':');
       const repo = parts[0].includes('/') ? parts[0] : 'library/' + parts[0];
       const tag = parts[1] || 'latest';
-      const url = `https://registry.ollama.ai/v2/${repo}/manifests/${tag}`;
+      const url = 'https://registry.ollama.ai/v2/' + repo + '/manifests/' + tag;
       const res = await fetch(url, {
         headers: { 'Accept': 'application/vnd.docker.distribution.manifest.v2+json' }
       });
@@ -96,7 +98,10 @@
 
         pluginState.models = rawModels.map((m) => {
           const curVer = shortDigest(m.digest);
-          const latestVer = pluginState.remoteDigests[m.name] || curVer;
+          const isSim = !!pluginState.simOutdated[m.name];
+          const latestVer = isSim
+            ? 'sha256:' + ((m.digest || '').replace(/^sha256:/, '').split('').reverse().join('').slice(0, 12) || '9f8e7d6c5b4a')
+            : (pluginState.remoteDigests[m.name] || curVer);
           return {
             name: m.name,
             sizeBytes: m.size || 0,
@@ -143,7 +148,7 @@
                 const msg = JSON.parse(line);
                 if (msg.total && msg.completed) {
                   const pct = Math.round((msg.completed / msg.total) * 100);
-                  pluginState.updateStatusText = `${msg.status || 'Downloading'} (${pct}%)`;
+                  pluginState.updateStatusText = (msg.status || 'Downloading') + ' (' + pct + '%)';
                 } else if (msg.status) {
                   pluginState.updateStatusText = msg.status;
                 }
@@ -152,6 +157,7 @@
             }
           }
         }
+        delete pluginState.simOutdated[modelName];
         delete pluginState.remoteDigests[modelName];
         pluginState.updatingModel = null;
         pluginState.updateStatusText = '';
@@ -184,30 +190,33 @@
     function render() {
       const sidebarOpen = !!document.querySelector('nav');
       const rowsHtml = pluginState.models.length === 0
-        ? `<tr><td colspan="5" style="padding:32px;text-align:center;color:#a1a1a1;font-size:12px;">${pluginState.loading ? 'Loading local models from Ollama (/api/tags)...' : 'No local models found in Ollama.'}</td></tr>`
+        ? '<tr><td colspan="5" style="padding:32px;text-align:center;color:#a1a1a1;font-size:12px;">' + (pluginState.loading ? 'Loading local models from Ollama (/api/tags)...' : 'No local models found in Ollama.') + '</td></tr>'
         : pluginState.models.map((m) => {
             const isUpdating = pluginState.updatingModel === m.name;
             const isConfirmingRemove = pluginState.confirmRemoveModel === m.name;
             const updateBtnDisabled = !m.hasUpdate || isUpdating;
             const updateBtnStyle = updateBtnDisabled
-              ? 'background:#2a2a2a;color:#666666;cursor:not-allowed;opacity:0.6;'
-              : 'background:#ffffff;color:#000000;cursor:pointer;';
+              ? 'background:#2e2e2e;color:#6b6b6b;cursor:not-allowed;'
+              : 'background:#ffffff;color:#0a0a0a;cursor:pointer;';
 
             return `
               <tr style="border-top:1px solid #2e2e2e;">
                 <td style="padding:12px 14px;">
                   <div style="font-weight:500;color:#ffffff;font-size:13px;">${m.name}</div>
-                  <div style="color:#8a8a8a;font-size:11px;margin-top:2px;">${m.sizeFormatted}${m.paramSize ? ' • ' + m.paramSize : ''} • ${m.quantization}</div>
+                  <div style="color:#8a8a8a;font-size:11px;margin-top:2px;">${m.sizeFormatted}${m.paramSize ? ' &bull; ' + m.paramSize : ''} &bull; ${m.quantization}</div>
                 </td>
                 <td style="padding:12px 14px;color:#d4d4d4;font-size:12px;">${m.datePulled}</td>
-                <td style="padding:12px 14px;font-family:monospace;font-size:12px;color:#a3a3a3;">${m.currentVersion}</td>
+                <td style="padding:12px 14px;font-family:monospace;font-size:11px;color:#a3a3a3;">${m.currentVersion}</td>
                 <td style="padding:12px 14px;">
-                  <div style="font-family:monospace;font-size:12px;color:${m.hasUpdate ? '#fcd34d' : '#86efac'};">${m.latestVersion}</div>
+                  <div style="font-family:monospace;font-size:11px;color:${m.hasUpdate ? '#fcd34d' : '#86efac'};">${m.latestVersion}</div>
                   <div style="font-size:11px;margin-top:2px;color:${m.hasUpdate ? '#f59e0b' : '#4ade80'};">
-                    ${m.hasUpdate ? '● Update Available' : '✓ Up to Date'}
+                    ${m.hasUpdate ? 'Update Available' : 'Up to Date'}
                   </div>
                 </td>
                 <td style="padding:12px 14px;text-align:right;white-space:nowrap;">
+                  <button data-sim-toggle="${m.name}" title="Simulate remote update availability" style="background:#333333;color:#d4d4d4;border:none;border-radius:8px;padding:6px 10px;font-size:11px;cursor:pointer;margin-right:6px;">
+                    ${m.hasUpdate ? 'Reset' : 'Sim Update'}
+                  </button>
                   <button data-update-model="${m.name}" ${updateBtnDisabled ? 'disabled' : ''} style="${updateBtnStyle}border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:500;margin-right:6px;">
                     ${isUpdating ? 'Updating...' : 'Update'}
                   </button>
@@ -224,8 +233,8 @@
         <div id="opf-models-header" class="h-13 z-10 flex w-full flex-none items-center justify-between pr-6 bg-white dark:bg-neutral-900 select-none">
           <h1 class="${sidebarOpen ? 'pl-6' : 'pl-16'} transition-[padding-left] duration-300 font-rounded text-md font-medium dark:text-white">Models</h1>
           <div class="flex items-center gap-2">
-            <button id="opf-lmm-check-updates" class="rounded-lg px-3 py-1.5 text-xs font-medium text-white cursor-pointer" style="background:#262626;">${pluginState.checkingRemote ? 'Checking Registry...' : 'Check for Updates'}</button>
-            <button id="opf-lmm-refresh" class="rounded-lg px-3 py-1.5 text-xs font-medium text-white cursor-pointer" style="background:#262626;">↻ Refresh</button>
+            <button id="opf-lmm-check-updates" class="rounded-lg px-3 py-1.5 text-xs font-medium text-neutral-200 cursor-pointer" style="background:#262626;">${pluginState.checkingRemote ? 'Checking...' : 'Check for Updates'}</button>
+            <button id="opf-lmm-refresh" class="rounded-lg bg-white px-3 py-1.5 text-xs font-medium text-black cursor-pointer">Refresh</button>
           </div>
         </div>
         <div class="flex-1 overflow-y-auto px-6 py-4">
@@ -238,15 +247,15 @@
                 </div>
               </div>
               ${pluginState.error ? `<div style="background:#451a1a;border:1px solid #7f1d1d;color:#fca5a5;padding:10px 12px;border-radius:8px;font-size:12px;margin-bottom:12px;">${pluginState.error}</div>` : ''}
-              ${pluginState.updatingModel ? `<div style="background:#172554;border:1px solid #1e3a8a;color:#93c5fd;padding:10px 12px;border-radius:8px;font-size:12px;margin-bottom:12px;">⟳ Updating <b>${pluginState.updatingModel}</b>: ${pluginState.updateStatusText}</div>` : ''}
-              <div style="overflow-x:auto;border:1px solid #2e2e2e;border-radius:10px;background:#171717;">
+              ${pluginState.updatingModel ? `<div style="background:#172554;border:1px solid #1e3a8a;color:#93c5fd;padding:10px 12px;border-radius:8px;font-size:12px;margin-bottom:12px;">Updating <b>${pluginState.updatingModel}</b>: ${pluginState.updateStatusText}</div>` : ''}
+              <div style="overflow-x:auto;border:1px solid #333333;border-radius:10px;background:#171717;">
                 <table style="width:100%;border-collapse:collapse;text-align:left;">
                   <thead>
                     <tr style="background:#1f1f1f;color:#a3a3a3;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;">
                       <th style="padding:10px 14px;">Model</th>
                       <th style="padding:10px 14px;">Date Pulled</th>
-                      <th style="padding:10px 14px;">Current Update Version</th>
-                      <th style="padding:10px 14px;">Latest Update Version</th>
+                      <th style="padding:10px 14px;">Current Version</th>
+                      <th style="padding:10px 14px;">Latest Version</th>
                       <th style="padding:10px 14px;text-align:right;">Actions</th>
                     </tr>
                   </thead>
@@ -268,6 +277,14 @@
 
       const checkBtn = container.querySelector('#opf-lmm-check-updates');
       if (checkBtn) checkBtn.addEventListener('click', () => loadModels(true));
+
+      container.querySelectorAll('[data-sim-toggle]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const name = btn.getAttribute('data-sim-toggle');
+          pluginState.simOutdated[name] = !pluginState.simOutdated[name];
+          loadModels(false);
+        });
+      });
 
       container.querySelectorAll('[data-update-model]').forEach((btn) => {
         btn.addEventListener('click', () => {
