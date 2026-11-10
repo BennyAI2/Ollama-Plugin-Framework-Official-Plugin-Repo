@@ -1,11 +1,11 @@
 {
   "id": "com.opf.local-models-manager",
-  "name": "Local Models Manager & Updater",
+  "name": "Local Models Library",
   "version": "1.0.0",
-  "author": "BennyW (OPF Official)",
+  "author": "BennyAI2 (OPF Official)",
   "trust_tier": "official",
   "risk_tier": 1,
-  "description": "View locally available Ollama models with Date Pulled, Current Update Version, Latest Update Version, an Update button (active when an update is available, greyed out when up to date), and a Remove button.",
+  "description": "Adds a 'Models' page to the left navigation sidebar to view locally available Ollama models with Date Pulled, Current Update Version, Latest Update Version, an Update button (active when an update is available, greyed out when up to date), and a Remove button.",
   "min_ollama_version": "0.12.0",
   "max_tested_ollama_version": "0.40.17",
   "verified_ollama_versions": [
@@ -19,7 +19,7 @@
   ],
   "isolation_profile": "profile_b_local_ollama",
   "permissions": [
-    "ui:panel",
+    "ui:sidebar",
     "ollama:models:read",
     "ollama:models:pull",
     "ollama:models:delete"
