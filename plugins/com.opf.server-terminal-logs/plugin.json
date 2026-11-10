@@ -1,0 +1,19 @@
+{
+  "id": "com.opf.server-terminal-logs",
+  "name": "Live Ollama Server Terminal View",
+  "version": "1.0.2",
+  "author": "BennyAI2 (OPF Official)",
+  "trust_tier": "official",
+  "risk_tier": 2,
+  "description": "Adds a live terminal log viewer tab for ollama.exe serve and llama.cpp runner stdout/stderr with token/s telemetry.",
+  "min_ollama_version": "0.12.0",
+  "max_tested_ollama_version": "0.40.17",
+  "verified_ollama_versions": ["0.12.3", "0.40.15", "0.40.16", "0.40.17"],
+  "watch_paths": ["server/routes.go", "cmd/cmd.go"],
+  "isolation_profile": "profile_b_local_ollama",
+  "permissions": [
+    "ui:sidebar",
+    "ollama:logs:read"
+  ],
+  "entry": "index.js"
+}

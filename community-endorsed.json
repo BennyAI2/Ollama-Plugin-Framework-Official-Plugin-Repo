@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "source_id": "opf-endorsed",
+  "source_name": "OPF Endorsed Community Plugins (AI + Mod Audited)",
+  "source_url": "https://raw.githubusercontent.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo/main/community-endorsed.json",
+  "repository_url": "https://github.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo",
+  "trust_tier": "endorsed",
+  "maintainer": "BennyAI2 & OPF Moderators",
+  "updated_at": "2026-11-10T08:11:00Z",
+  "plugins": [
+    {
+      "id": "org.community.local-vram-analyzer",
+      "name": "Local GGUF Layer & VRAM Inspector",
+      "version": "1.4.0",
+      "author": "@gguf-wizard",
+      "trust_tier": "endorsed",
+      "risk_tier": 1,
+      "description": "Inspects local ~/.ollama/models manifests and calculates exact KV-cache vs weight VRAM allocation per context length.",
+      "min_ollama_version": "0.12.0",
+      "max_tested_ollama_version": "0.40.16",
+      "verified_ollama_versions": ["0.12.3", "0.40.15", "0.40.16"],
+      "watch_paths": ["api/types.go"],
+      "isolation_profile": "profile_b_local_ollama",
+      "permissions": [
+        "ui:panel",
+        "ollama:models:read"
+      ],
+      "entry_url": "https://raw.githubusercontent.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo/main/plugins/org.community.local-vram-analyzer/index.js",
+      "sha256": "6ef7828ef24c08476a6b8a43faecfef704a2c394eaa9db1cb6c230ba2e10da06",
+      "ai_security_attestation": {
+        "status": "PASSED",
+        "auditors": ["openai-frontier-security-auditor-v1", "static-ast-guard-v1", "moderator:@BennyAI2"],
+        "privacy_airlock_verified": true
+      }
+    }
+  ]
+}

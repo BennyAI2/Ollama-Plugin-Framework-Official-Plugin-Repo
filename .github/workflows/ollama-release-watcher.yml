@@ -1,0 +1,24 @@
+name: Ollama Upstream Release Watcher & Smart Version Bumper
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check-ollama-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout Official Plugin Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run Git-Diff Smart Version Bumper against ollama/ollama
+        run: node scripts/git-diff-bumper.js

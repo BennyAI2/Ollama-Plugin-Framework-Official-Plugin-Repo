@@ -1,0 +1,24 @@
+name: Dual Frontier AI & Static AST Plugin Security Audit
+
+on:
+  pull_request:
+    paths:
+      - 'plugins/**'
+      - 'official-source.json'
+      - 'community-endorsed.json'
+  workflow_dispatch:
+
+jobs:
+  security-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run Static AST Guard, Privacy Airlock Check & SHA-256 Pin Verifier
+        run: node scripts/ai-security-auditor.js

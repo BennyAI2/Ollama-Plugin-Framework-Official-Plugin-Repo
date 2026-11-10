@@ -1,0 +1,19 @@
+{
+  "id": "org.community.local-vram-analyzer",
+  "name": "Local GGUF Layer & VRAM Inspector",
+  "version": "1.4.0",
+  "author": "@gguf-wizard",
+  "trust_tier": "endorsed",
+  "risk_tier": 1,
+  "description": "Inspects local ~/.ollama/models manifests and calculates exact KV-cache vs weight VRAM allocation per context length.",
+  "min_ollama_version": "0.12.0",
+  "max_tested_ollama_version": "0.40.16",
+  "verified_ollama_versions": ["0.12.3", "0.40.15", "0.40.16"],
+  "watch_paths": ["api/types.go"],
+  "isolation_profile": "profile_b_local_ollama",
+  "permissions": [
+    "ui:panel",
+    "ollama:models:read"
+  ],
+  "entry": "index.js"
+}
