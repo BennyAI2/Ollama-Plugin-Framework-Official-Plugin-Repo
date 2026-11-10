@@ -1,14 +1,25 @@
 # Ollama Plugin Framework (OPF) — Official Plugin Source Repository
 
+> ### 🚀 Coming Soon: Ollama Plugin Framework (`Ollama +`) Desktop Release
+> The **Ollama Plugin Framework (`Ollama +`)** desktop integration and one-click installer are currently in final preparation and **coming soon**!
+> When loaded, **Ollama +** extends the native Ollama desktop experience with a dedicated **Plugins** manager, customizable repository sources, automated version-compatibility gating, and standardized native UI components—while shipping with **0 pre-installed plugins** so you stay in complete control of what runs on your system.
+
 Official and Community-Endorsed plugin registry for the **Ollama Plugin Framework (OPF)**.
 
-OPF ships with **Zero Default Bloat** (0 pre-installed plugins) and uses a **Synology Package Center** source architecture combined with a **Bukkit/Spigot-style Plugin Compatibility Update Gate**.
+OPF ships with **Zero Default Bloat** (0 pre-installed plugins) and uses a **Multi-Source Package Center Architecture** combined with a **Version-Verified Plugin Compatibility Update Gate**.
+
+---
+
+## 📸 Preview & Screenshots
+
+<!-- Screenshots of Ollama + (Plugins Manager, Package Center, Sources, and Local Models Library) -->
+_Screenshots of the **Ollama +** desktop interface and the **Local Models Library** plugin will be added below._
 
 ---
 
 ## 📦 Live Source Manifest URLs
 
-Add or manage these sources inside the Ollama Desktop **`Plugins -> Sources`** tab:
+Add or manage these sources inside the **Ollama +** Desktop **`Plugins -> Sources`** tab:
 
 | Source Tier | Manifest URL |
 | :--- | :--- |
@@ -30,7 +41,7 @@ Add or manage these sources inside the Ollama Desktop **`Plugins -> Sources`** t
 
 ---
 
-## 🛡️ Bukkit-Style Compatibility Gate & Automated CI
+## 🛡️ Version-Verified Compatibility Gate & Automated CI
 
 1. **Git-Diff Smart Version Bumper ([`.github/workflows/ollama-release-watcher.yml`](.github/workflows/ollama-release-watcher.yml))**:
    - Checks new releases of `ollama/ollama` against each plugin's declared `watch_paths` (`api/types.go`, `server/routes.go`).
