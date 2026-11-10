@@ -14,6 +14,33 @@
   },
   "plugins": [
     {
+      "id": "com.opf.local-models-manager",
+      "name": "Local Models Manager & Updater",
+      "version": "1.0.0",
+      "author": "BennyW (OPF Official)",
+      "trust_tier": "official",
+      "risk_tier": 1,
+      "description": "View locally available Ollama models with Date Pulled, Current Update Version, Latest Update Version, an Update button (active when an update is available, greyed out when up to date), and a Remove button.",
+      "min_ollama_version": "0.12.0",
+      "max_tested_ollama_version": "0.40.17",
+      "verified_ollama_versions": ["0.40.15", "0.40.16", "0.40.17"],
+      "watch_paths": ["api/types.go", "server/routes.go"],
+      "isolation_profile": "profile_b_local_ollama",
+      "permissions": [
+        "ui:panel",
+        "ollama:models:read",
+        "ollama:models:pull",
+        "ollama:models:delete"
+      ],
+      "entry_url": "https://raw.githubusercontent.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo/main/plugins/com.opf.local-models-manager/index.js",
+      "sha256": "d6039fd2535c061614180232d7602076e41a39e825b09825bc8aa8db51471d8a",
+      "ai_security_attestation": {
+        "status": "PASSED",
+        "auditors": ["openai-frontier-security-auditor-v1", "static-ast-guard-v1"],
+        "privacy_airlock_verified": true
+      }
+    },
+    {
       "id": "com.opf.smooth-load-throttler",
       "name": "Smooth-Load GPU Prep & Model Throttler",
       "version": "1.0.0",

@@ -19,7 +19,15 @@ Add these sources inside the Ollama Desktop **`Plugins -> Sources`** tab (regist
 
 ## 🧩 Available Plugins
 
-### 1. Smooth-Load GPU Prep & Model Throttler (`com.opf.smooth-load-throttler`)
+### 1. Local Models Manager & Updater (`com.opf.local-models-manager`)
+- **Tier**: `official`
+- **Category**: Model Management
+- **Capabilities**:
+  - Displays locally available Ollama models (`/api/tags`) with **Date Pulled**, **Current Update Version** (digest), and **Latest Update Version**.
+  - **Update Button**: Active & clickable when a model update is available (streams `/api/pull` progress live); greyed out (`disabled`) when the model is already up to date.
+  - **Remove Button**: Removes a local model via `DELETE /api/delete` with inline confirmation.
+
+### 2. Smooth-Load GPU Prep & Model Throttler (`com.opf.smooth-load-throttler`)
 - **Tier**: `official`
 - **Category**: Engine & GPU Optimization
 - **Capabilities**:
