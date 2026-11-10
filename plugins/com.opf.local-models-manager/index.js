@@ -1,8 +1,7 @@
 /**
  * OPF Official Plugin: Local Models Library (com.opf.local-models-manager)
- * Dynamically downloaded and executed from the OPF Official Plugin Repo when installed.
- * Registers a "Models" navigation item in the left-hand sidebar via window.OPF.registerSidebarPage().
- * Uses 100% pure ASCII + explicit inline styles so it never depends on purged Tailwind classes.
+ * Uses the standardized OPF Design System classes (.opf-page, .opf-card, .opf-table, .opf-btn, .opf-badge)
+ * provided by the OPF Host so typography, spacing, and alignment match native Ollama 1:1.
  */
 
 (function() {
@@ -185,70 +184,67 @@
     function render() {
       const sidebarOpen = !!document.querySelector('nav');
       const rowsHtml = pluginState.models.length === 0
-        ? '<tr><td colspan="5" style="padding:32px;text-align:center;color:#a1a1a1;font-size:12px;">' + (pluginState.loading ? 'Loading local models from Ollama (/api/tags)...' : 'No local models found in Ollama.') + '</td></tr>'
+        ? '<tr><td colspan="5" class="opf-table-empty">' + (pluginState.loading ? 'Loading local models from Ollama (/api/tags)...' : 'No local models found in Ollama.') + '</td></tr>'
         : pluginState.models.map((m) => {
             const isUpdating = pluginState.updatingModel === m.name;
             const isConfirmingRemove = pluginState.confirmRemoveModel === m.name;
             const updateBtnDisabled = !m.hasUpdate || isUpdating;
-            const updateBtnStyle = updateBtnDisabled
-              ? 'background:#2e2e2e;color:#6b6b6b;cursor:not-allowed;'
-              : 'background:#ffffff;color:#0a0a0a;cursor:pointer;';
 
             return `
-              <tr style="border-top:1px solid #2e2e2e;">
-                <td style="padding:12px 14px;">
-                  <div style="font-weight:500;color:#ffffff;font-size:13px;">${m.name}</div>
-                  <div style="color:#8a8a8a;font-size:11px;margin-top:2px;">${m.sizeFormatted}${m.paramSize ? ' &bull; ' + m.paramSize : ''} &bull; ${m.quantization}</div>
+              <tr>
+                <td>
+                  <div class="opf-table-primary">${m.name}</div>
+                  <div class="opf-table-sub">${m.sizeFormatted}${m.paramSize ? ' &bull; ' + m.paramSize : ''} &bull; ${m.quantization}</div>
                 </td>
-                <td style="padding:12px 14px;color:#d4d4d4;font-size:12px;">${m.datePulled}</td>
-                <td style="padding:12px 14px;font-family:monospace;font-size:11px;color:#a3a3a3;">${m.currentVersion}</td>
-                <td style="padding:12px 14px;">
-                  <div style="font-family:monospace;font-size:11px;color:${m.hasUpdate ? '#fcd34d' : '#86efac'};">${m.latestVersion}</div>
-                  <div style="font-size:11px;margin-top:2px;color:${m.hasUpdate ? '#f59e0b' : '#4ade80'};">
+                <td>${m.datePulled}</td>
+                <td class="opf-mono">${m.currentVersion}</td>
+                <td>
+                  <div class="opf-mono" style="color:${m.hasUpdate ? '#fcd34d' : '#86efac'};">${m.latestVersion}</div>
+                  <div class="opf-table-status" style="color:${m.hasUpdate ? '#f59e0b' : '#4ade80'};">
                     ${m.hasUpdate ? 'Update Available' : 'Up to Date'}
                   </div>
                 </td>
-                <td style="padding:12px 14px;text-align:right;white-space:nowrap;">
-                  <button data-update-model="${m.name}" ${updateBtnDisabled ? 'disabled' : ''} style="${updateBtnStyle}border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:500;margin-right:6px;">
+                <td class="opf-table-actions">
+                  <button data-update-model="${m.name}" ${updateBtnDisabled ? 'disabled' : ''} class="opf-btn ${updateBtnDisabled ? 'opf-btn-disabled' : 'opf-btn-primary'}">
                     ${isUpdating ? 'Updating...' : 'Update'}
                   </button>
                   ${isConfirmingRemove
-                    ? `<button data-confirm-remove="${m.name}" style="background:#dc2626;color:#fff;border:none;border-radius:8px;padding:6px 10px;font-size:12px;font-weight:600;cursor:pointer;margin-right:4px;">Confirm</button>
-                       <button data-cancel-remove="${m.name}" style="background:#3a3a3a;color:#ccc;border:none;border-radius:8px;padding:6px 10px;font-size:12px;cursor:pointer;">Cancel</button>`
-                    : `<button data-remove-model="${m.name}" style="background:#3b1c1c;color:#fca5a5;border:1px solid #7f1d1d;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:500;cursor:pointer;">Remove</button>`
+                    ? `<button data-confirm-remove="${m.name}" class="opf-btn opf-btn-danger-solid">Confirm</button>
+                       <button data-cancel-remove="${m.name}" class="opf-btn opf-btn-secondary">Cancel</button>`
+                    : `<button data-remove-model="${m.name}" class="opf-btn opf-btn-danger">Remove</button>`
                   }
                 </td>
               </tr>`;
           }).join('');
 
       container.innerHTML = `
-        <div id="opf-models-header" class="h-13 z-10 flex w-full flex-none items-center justify-between bg-white dark:bg-neutral-900 select-none" style="padding-right:24px;">
-          <h1 class="${sidebarOpen ? 'pl-6' : 'pl-16'} transition-[padding-left] duration-300 font-rounded text-md font-medium dark:text-white">Models</h1>
+        <div id="opf-models-header" class="opf-header">
+          <h1 class="opf-header-title" style="padding-left:${sidebarOpen ? '24px' : '64px'};">Models</h1>
         </div>
-        <div class="flex-1 overflow-y-auto px-6 py-4">
-          <div class="mx-auto max-w-3xl space-y-4">
-            <div class="rounded-xl p-4" style="background:#262626;">
-              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;">
+        <div class="opf-scroll">
+          <div class="opf-container-wide">
+            <div class="opf-card">
+              <div class="opf-card-row" style="margin-bottom:14px;">
                 <div>
-                  <div class="text-sm font-medium text-white">Local Available Models (${pluginState.models.length})</div>
-                  <div class="text-xs text-neutral-400" style="margin-top:2px;">Installed models on your system with Date Pulled, Current Update Version, Latest Update Version, Update, and Remove.</div>
+                  <div class="opf-card-title">Local Available Models (${pluginState.models.length})</div>
+                  <div class="opf-card-desc" style="margin-top:4px;">Installed models on your system with Date Pulled, Current Update Version, Latest Update Version, Update, and Remove.</div>
                 </div>
-                <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
-                  <button id="opf-lmm-check-updates" style="background:#383838;color:#e5e5e5;border:none;border-radius:8px;padding:6px 14px;font-size:12px;font-weight:500;cursor:pointer;">${pluginState.checkingRemote ? 'Checking...' : 'Check for Updates'}</button>
-                  <button id="opf-lmm-refresh" style="background:#ffffff;color:#0a0a0a;border:none;border-radius:8px;padding:6px 14px;font-size:12px;font-weight:500;cursor:pointer;">Refresh</button>
+                <div class="opf-btn-group">
+                  <button id="opf-lmm-check-updates" class="opf-btn opf-btn-secondary">${pluginState.checkingRemote ? 'Checking...' : 'Check for Updates'}</button>
+                  <button id="opf-lmm-refresh" class="opf-btn opf-btn-primary">Refresh</button>
                 </div>
               </div>
-              ${pluginState.error ? `<div style="background:#451a1a;border:1px solid #7f1d1d;color:#fca5a5;padding:10px 12px;border-radius:8px;font-size:12px;margin-bottom:12px;">${pluginState.error}</div>` : ''}
-              ${pluginState.updatingModel ? `<div style="background:#172554;border:1px solid #1e3a8a;color:#93c5fd;padding:10px 12px;border-radius:8px;font-size:12px;margin-bottom:12px;">Updating <b>${pluginState.updatingModel}</b>: ${pluginState.updateStatusText}</div>` : ''}
-              <div style="overflow-x:auto;border:1px solid #333333;border-radius:10px;background:#171717;">
-                <table style="width:100%;border-collapse:collapse;text-align:left;">
+              ${pluginState.error ? `<div class="opf-alert opf-alert-danger">${pluginState.error}</div>` : ''}
+              ${pluginState.updatingModel ? `<div class="opf-alert opf-alert-info">Updating <b>${pluginState.updatingModel}</b>: ${pluginState.updateStatusText}</div>` : ''}
+              <div class="opf-table-wrap">
+                <table class="opf-table">
                   <thead>
-                    <tr style="background:#1f1f1f;color:#a3a3a3;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;">
-                      <th style="padding:10px 14px;">Model</th>
-                      <th style="padding:10px 14px;">Date Pulled</th>
-                      <th style="padding:10px 14px;">Current Version</th>
-                      <th style="padding:10px 14px;">Latest Version</th>
-                      <th style="padding:10px 14px;text-align:right;">Actions</th>
+                    <tr>
+                      <th>Model</th>
+                      <th>Date Pulled</th>
+                      <th>Current Version</th>
+                      <th>Latest Version</th>
+                      <th style="text-align:right;">Actions</th>
                     </tr>
                   </thead>
                   <tbody>${rowsHtml}</tbody>
