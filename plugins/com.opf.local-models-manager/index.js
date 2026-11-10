@@ -2,7 +2,7 @@
  * OPF Official Plugin: Local Models Library (com.opf.local-models-manager)
  * Dynamically downloaded and executed from the OPF Official Plugin Repo when installed.
  * Registers a "Models" navigation item in the left-hand sidebar via window.OPF.registerSidebarPage().
- * Uses 100% pure ASCII + inline SVG icons to guarantee zero character encoding issues.
+ * Uses 100% pure ASCII + explicit inline styles so it never depends on purged Tailwind classes.
  */
 
 (function() {
@@ -41,7 +41,6 @@
     error: null,
     models: [],
     remoteDigests: {},
-    simOutdated: {},
     updatingModel: null,
     updateStatusText: '',
     confirmRemoveModel: null
@@ -98,10 +97,7 @@
 
         pluginState.models = rawModels.map((m) => {
           const curVer = shortDigest(m.digest);
-          const isSim = !!pluginState.simOutdated[m.name];
-          const latestVer = isSim
-            ? 'sha256:' + ((m.digest || '').replace(/^sha256:/, '').split('').reverse().join('').slice(0, 12) || '9f8e7d6c5b4a')
-            : (pluginState.remoteDigests[m.name] || curVer);
+          const latestVer = pluginState.remoteDigests[m.name] || curVer;
           return {
             name: m.name,
             sizeBytes: m.size || 0,
@@ -157,7 +153,6 @@
             }
           }
         }
-        delete pluginState.simOutdated[modelName];
         delete pluginState.remoteDigests[modelName];
         pluginState.updatingModel = null;
         pluginState.updateStatusText = '';
@@ -214,9 +209,6 @@
                   </div>
                 </td>
                 <td style="padding:12px 14px;text-align:right;white-space:nowrap;">
-                  <button data-sim-toggle="${m.name}" title="Simulate remote update availability" style="background:#333333;color:#d4d4d4;border:none;border-radius:8px;padding:6px 10px;font-size:11px;cursor:pointer;margin-right:6px;">
-                    ${m.hasUpdate ? 'Reset' : 'Sim Update'}
-                  </button>
                   <button data-update-model="${m.name}" ${updateBtnDisabled ? 'disabled' : ''} style="${updateBtnStyle}border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:500;margin-right:6px;">
                     ${isUpdating ? 'Updating...' : 'Update'}
                   </button>
@@ -230,20 +222,20 @@
           }).join('');
 
       container.innerHTML = `
-        <div id="opf-models-header" class="h-13 z-10 flex w-full flex-none items-center justify-between pr-6 bg-white dark:bg-neutral-900 select-none">
+        <div id="opf-models-header" class="h-13 z-10 flex w-full flex-none items-center justify-between bg-white dark:bg-neutral-900 select-none" style="padding-right:24px;">
           <h1 class="${sidebarOpen ? 'pl-6' : 'pl-16'} transition-[padding-left] duration-300 font-rounded text-md font-medium dark:text-white">Models</h1>
-          <div class="flex items-center gap-2">
-            <button id="opf-lmm-check-updates" class="rounded-lg px-3 py-1.5 text-xs font-medium text-neutral-200 cursor-pointer" style="background:#262626;">${pluginState.checkingRemote ? 'Checking...' : 'Check for Updates'}</button>
-            <button id="opf-lmm-refresh" class="rounded-lg bg-white px-3 py-1.5 text-xs font-medium text-black cursor-pointer">Refresh</button>
-          </div>
         </div>
         <div class="flex-1 overflow-y-auto px-6 py-4">
           <div class="mx-auto max-w-3xl space-y-4">
             <div class="rounded-xl p-4" style="background:#262626;">
-              <div class="flex items-center justify-between mb-3">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;">
                 <div>
                   <div class="text-sm font-medium text-white">Local Available Models (${pluginState.models.length})</div>
-                  <div class="text-xs text-neutral-400 mt-0.5">Installed models on your system with Date Pulled, Current Update Version, Latest Update Version, Update, and Remove.</div>
+                  <div class="text-xs text-neutral-400" style="margin-top:2px;">Installed models on your system with Date Pulled, Current Update Version, Latest Update Version, Update, and Remove.</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+                  <button id="opf-lmm-check-updates" style="background:#383838;color:#e5e5e5;border:none;border-radius:8px;padding:6px 14px;font-size:12px;font-weight:500;cursor:pointer;">${pluginState.checkingRemote ? 'Checking...' : 'Check for Updates'}</button>
+                  <button id="opf-lmm-refresh" style="background:#ffffff;color:#0a0a0a;border:none;border-radius:8px;padding:6px 14px;font-size:12px;font-weight:500;cursor:pointer;">Refresh</button>
                 </div>
               </div>
               ${pluginState.error ? `<div style="background:#451a1a;border:1px solid #7f1d1d;color:#fca5a5;padding:10px 12px;border-radius:8px;font-size:12px;margin-bottom:12px;">${pluginState.error}</div>` : ''}
@@ -277,14 +269,6 @@
 
       const checkBtn = container.querySelector('#opf-lmm-check-updates');
       if (checkBtn) checkBtn.addEventListener('click', () => loadModels(true));
-
-      container.querySelectorAll('[data-sim-toggle]').forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const name = btn.getAttribute('data-sim-toggle');
-          pluginState.simOutdated[name] = !pluginState.simOutdated[name];
-          loadModels(false);
-        });
-      });
 
       container.querySelectorAll('[data-update-model]').forEach((btn) => {
         btn.addEventListener('click', () => {
