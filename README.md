@@ -1,7 +1,7 @@
 # Ollama Plugin Framework (OPF) — Official Plugin Source Repository
 
-> ### 🚀 Coming Soon: Ollama Plugin Framework (`Ollama +`) Desktop Release
-> The **Ollama Plugin Framework (`Ollama +`)** desktop integration and one-click installer are currently in final preparation and **coming soon**!
+> ### ⚠️ Early Beta Available: Ollama + (Ollama Plugin Framework) Alternate Launcher
+> The **Ollama Plugin Framework (`Ollama +`)** alternate launcher & Windows installer is now available in **Early Beta Testing** at [**BennyAI2/Ollama-Plugin-Framework**](https://github.com/BennyAI2/Ollama-Plugin-Framework) (**active contributions and help are appreciated!**).
 > When loaded, **Ollama +** extends the native Ollama desktop experience with a dedicated **Plugins** manager, customizable repository sources, automated version-compatibility gating, and standardized native UI components—while shipping with **0 pre-installed plugins** so you stay in complete control of what runs on your system.
 
 Official and Community-Endorsed plugin registry for the **Ollama Plugin Framework (OPF)**.
