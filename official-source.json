@@ -60,7 +60,7 @@
         "net:get:raw.githubusercontent.com"
       ],
       "entry_url": "https://raw.githubusercontent.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo/main/plugins/com.opf.ollama-library-explorer/index.js",
-      "sha256": "e1d831f287cddb1fcb4cd3875c9faa6bdd0fa6a87504a895f2befbf0f6427f46",
+      "sha256": "3e8782207399a537c23273b47f0a0d4005edc9a957aebe2dc55b136c92821560",
       "ai_security_attestation": {
         "status": "PASSED",
         "auditors": ["openai-frontier-security-auditor-v1", "static-ast-guard-v1"],

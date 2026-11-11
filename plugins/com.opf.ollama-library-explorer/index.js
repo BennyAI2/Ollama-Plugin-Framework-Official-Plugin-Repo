@@ -966,10 +966,7 @@
           <div class="opf-container-wide">
             <div class="opf-card">
               <div class="opf-card-row" style="margin-bottom:14px;">
-                <div>
-                  <div class="opf-card-title">Online Ollama Model Library <span id="opf-lib-count" class="opf-card-version"></span></div>
-                  <div class="opf-card-desc" style="margin-top:4px;">Browse official local &amp; cloud models with live capability filters, model sizes, hardware compatibility scores, and 1-click pull progress.</div>
-                </div>
+                <div class="opf-card-title">Online Ollama Model Library <span id="opf-lib-count" class="opf-card-version"></span></div>
                 <div class="opf-btn-group">
                   <button id="opf-lib-reset" class="opf-btn opf-btn-secondary" style="display:none;">Reset Filters</button>
                   <button id="opf-lib-refresh" class="opf-btn opf-btn-primary">${state.loading ? 'Syncing...' : 'Sync Library'}</button>
