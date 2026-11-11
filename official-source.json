@@ -6,7 +6,7 @@
   "repository_url": "https://github.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo",
   "trust_tier": "official",
   "maintainer": "BennyAI2",
-  "updated_at": "2026-11-10T09:22:00Z",
+  "updated_at": "2026-11-11T07:48:00Z",
   "opf_core_compatibility": {
     "min_ollama_version": "0.12.0",
     "max_tested_ollama_version": "0.40.17",
@@ -34,6 +34,33 @@
       ],
       "entry_url": "https://raw.githubusercontent.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo/main/plugins/com.opf.local-models-manager/index.js",
       "sha256": "51e94c9452712907e186f3e6e4c07e0c45f589bdeb1cea953a65bb9fa5f17c81",
+      "ai_security_attestation": {
+        "status": "PASSED",
+        "auditors": ["openai-frontier-security-auditor-v1", "static-ast-guard-v1"],
+        "privacy_airlock_verified": true
+      }
+    },
+    {
+      "id": "com.opf.ollama-library-explorer",
+      "name": "Ollama Library Explorer",
+      "version": "1.0.0",
+      "author": "BennyAI2 (OPF Official)",
+      "trust_tier": "official",
+      "risk_tier": 1,
+      "description": "Adds a 'Library' page to the left navigation sidebar to browse the online Ollama model library with Local/Cloud and capability filters (Tools, Thinking, Vision, Embedding, Decision, Audio), model size details, live local hardware compatibility scores, inline % pull progress, and pulled indicators.",
+      "min_ollama_version": "0.12.0",
+      "max_tested_ollama_version": "0.40.17",
+      "verified_ollama_versions": ["0.40.15", "0.40.16", "0.40.17"],
+      "watch_paths": ["api/types.go", "server/routes.go", "app/ui/ui.go"],
+      "isolation_profile": "profile_b_local_ollama",
+      "permissions": [
+        "ui:sidebar",
+        "ollama:models:read",
+        "ollama:models:pull",
+        "net:get:raw.githubusercontent.com"
+      ],
+      "entry_url": "https://raw.githubusercontent.com/BennyAI2/Ollama-Plugin-Framework-Official-Plugin-Repo/main/plugins/com.opf.ollama-library-explorer/index.js",
+      "sha256": "e1d831f287cddb1fcb4cd3875c9faa6bdd0fa6a87504a895f2befbf0f6427f46",
       "ai_security_attestation": {
         "status": "PASSED",
         "auditors": ["openai-frontier-security-auditor-v1", "static-ast-guard-v1"],

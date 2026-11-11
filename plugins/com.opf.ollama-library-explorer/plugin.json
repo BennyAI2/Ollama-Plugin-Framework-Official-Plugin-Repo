@@ -1,0 +1,29 @@
+{
+  "id": "com.opf.ollama-library-explorer",
+  "name": "Ollama Library Explorer",
+  "version": "1.0.0",
+  "author": "BennyAI2 (OPF Official)",
+  "trust_tier": "official",
+  "risk_tier": 1,
+  "description": "Adds a 'Library' page to the left navigation sidebar to browse the online Ollama model library with Local/Cloud and capability filters (Tools, Thinking, Vision, Embedding, Decision), model size details, live local hardware compatibility scores, inline % pull progress, and pulled indicators.",
+  "min_ollama_version": "0.12.0",
+  "max_tested_ollama_version": "0.40.17",
+  "verified_ollama_versions": [
+    "0.40.15",
+    "0.40.16",
+    "0.40.17"
+  ],
+  "watch_paths": [
+    "api/types.go",
+    "server/routes.go",
+    "app/ui/ui.go"
+  ],
+  "isolation_profile": "profile_b_local_ollama",
+  "permissions": [
+    "ui:sidebar",
+    "ollama:models:read",
+    "ollama:models:pull",
+    "net:get:raw.githubusercontent.com"
+  ],
+  "entry": "index.js"
+}

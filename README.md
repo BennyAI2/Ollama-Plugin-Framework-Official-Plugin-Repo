@@ -48,6 +48,17 @@ Add or manage these sources inside the **Ollama +** Desktop **`Plugins -> Source
   - **Update Button**: Active & clickable when a model update is available (triggers `POST /api/pull` with live progress); greyed out (`disabled`) when the local model is already up to date.
   - **Remove Button**: Removes a local model via `DELETE /api/delete` with inline confirmation.
 
+### 2. Ollama Library Explorer (`com.opf.ollama-library-explorer`)
+- **Tier**: `official`
+- **Version**: `1.0.0`
+- **Navigation**: Adds a **`Library`** item directly to the left-hand navigation sidebar when installed and enabled.
+- **Capabilities**:
+  - Displays the full online Ollama model library ([`catalog/ollama-library.json`](catalog/ollama-library.json), automatically synced from `https://ollama.com/search` and merged live with `/api/v1/models/cloud`).
+  - **Filters**: Search bar, **Any / Local / Cloud** locality switch, multi-select capability filters (`Tools`, `Thinking`, `Vision`, `Embedding`, `Decision`, `Audio`), download size buckets (`Up to 8 GB` through `Over 64 GB`), and sorting (`Popular`, `Best Hardware Fit`, `Smallest Size`, `Context Window`, `Newest`, `Name`).
+  - **Model Size & Variant Selector**: Displays downloadable GB/MB size (or Cloud status) and lets you inspect specific tags per model family.
+  - **Local Hardware Compatibility Score**: Evaluates each model tag's estimated VRAM/memory requirement against your detected GPU VRAM and system memory (`/api/v1/inference-compute` + WebGL/WebGPU + RAM).
+  - **Inline Pull Progress & Pulled Replacement Button**: Initiating `POST /api/pull` replaces the `Pull` button in the table row with a live percentage progress indicator (`Pulling XX%`); models already available locally (`/api/tags`) hide the `Pull` button and show a **`✓ Pulled`** replacement button instead.
+
 ---
 
 ## 🛡️ Version-Verified Compatibility Gate & Automated CI
