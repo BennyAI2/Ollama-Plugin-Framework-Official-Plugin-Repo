@@ -20,7 +20,11 @@ OPF ships with **Zero Default Bloat** (0 pre-installed plugins) and uses a **Mul
 ![Local Models Library Plugin](assets/screenshots/opf-models-library.png)
 *Dynamically registered **Models** sidebar view with Date Pulled, Current/Latest Version digest tracking, Update action, and model deletion.*
 
-### 3. Integrated OPF Settings Management
+### 3. Ollama Library Explorer Plugin (Installed via Package Center)
+![Ollama Library Explorer Plugin](assets/screenshots/opf-library-explorer.png)
+*Dynamically registered **Library** view mirroring the online Ollama catalog with Local/Cloud & capability filters, model sizes, live hardware compatibility scoring, pull progress %, and pulled indicators.*
+
+### 4. Integrated OPF Settings Management
 ![Integrated OPF Settings Management](assets/screenshots/opf-settings-management.png)
 *Native Ollama Settings integration with automatic snapshot backups and one-click uninstall/restore options.*
 
