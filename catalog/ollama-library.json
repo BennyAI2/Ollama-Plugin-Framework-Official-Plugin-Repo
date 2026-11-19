@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "https://ollama.com/search",
-  "synced_at": "2026-11-18T15:22:40.741Z",
+  "synced_at": "2026-11-19T00:02:36.748Z",
   "model_count": 270,
   "models": [
     {
@@ -127,7 +127,7 @@
       "id": "inkling-2-small",
       "name": "inkling-2-small",
       "description": "594B Mixture-of-Experts model (17B active) with image input and up to 1M tokens of context, built for agentic coding and knowledge work.",
-      "updatedRel": "5d",
+      "updatedRel": "6d",
       "updatedTitle": "November 12, 2026",
       "updatedIso": "2026-11-12T00:00:00.000Z",
       "capabilities": [
@@ -176,8 +176,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "69.2K",
-      "pullsCount": 69208,
+      "pullsText": "72K",
+      "pullsCount": 72029,
       "tagCount": 7,
       "contextWindow": "2M",
       "contextTokens": 2000000,
@@ -277,8 +277,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "118.9K",
-      "pullsCount": 118887,
+      "pullsText": "121.1K",
+      "pullsCount": 121098,
       "tagCount": 8,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -384,8 +384,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "158.1K",
-      "pullsCount": 158063,
+      "pullsText": "158.8K",
+      "pullsCount": 158771,
       "tagCount": 14,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -482,8 +482,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "101.5K",
-      "pullsCount": 101469,
+      "pullsText": "102.9K",
+      "pullsCount": 102861,
       "tagCount": 9,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -583,7 +583,7 @@
       "id": "autotrust-jev",
       "name": "autotrust-jev",
       "description": "AutoTrust’s decision models return choices, yes/no probabilities, and ratings for the questions you supply",
-      "updatedRel": "1w",
+      "updatedRel": "2w",
       "updatedTitle": "November 4, 2026",
       "updatedIso": "2026-11-04T00:00:00.000Z",
       "capabilities": [
@@ -592,8 +592,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "56.2K",
-      "pullsCount": 56160,
+      "pullsText": "57.6K",
+      "pullsCount": 57626,
       "tagCount": 11,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -693,8 +693,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "108.3K",
-      "pullsCount": 108304,
+      "pullsText": "109.8K",
+      "pullsCount": 109762,
       "tagCount": 16,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -777,8 +777,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "74.5K",
-      "pullsCount": 74531,
+      "pullsText": "75.5K",
+      "pullsCount": 75523,
       "tagCount": 8,
       "contextWindow": "125K",
       "contextTokens": 125000,
@@ -887,8 +887,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "44.9K",
-      "pullsCount": 44907,
+      "pullsText": "46K",
+      "pullsCount": 46040,
       "tagCount": 5,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -968,8 +968,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "57.6K",
-      "pullsCount": 57632,
+      "pullsText": "58.6K",
+      "pullsCount": 58594,
       "tagCount": 9,
       "contextWindow": "125K",
       "contextTokens": 125000,
@@ -1079,8 +1079,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "49.5K",
-      "pullsCount": 49503,
+      "pullsText": "50.3K",
+      "pullsCount": 50347,
       "tagCount": 8,
       "contextWindow": "125K",
       "contextTokens": 125000,
@@ -1177,49 +1177,10 @@
       "defaultSizeText": "1.7GB - 2.1GB"
     },
     {
-      "id": "minimax-m3.1-flash",
-      "name": "minimax-m3.1-flash",
-      "description": "As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%.",
-      "updatedRel": "4w",
-      "updatedTitle": "October 19, 2026",
-      "updatedIso": "2026-10-19T00:00:00.000Z",
-      "capabilities": [
-        "vision",
-        "tools",
-        "thinking"
-      ],
-      "isCloud": true,
-      "isLocal": false,
-      "pullsText": "",
-      "pullsCount": 0,
-      "tagCount": 1,
-      "contextWindow": "976K",
-      "contextTokens": 976000,
-      "paramSizes": [],
-      "popularRank": 15,
-      "tags": [
-        {
-          "tag": "minimax-m3.1-flash:cloud",
-          "shortTag": "cloud",
-          "isLatest": false,
-          "isCloud": true,
-          "sizeGB": 0,
-          "minSizeGB": 0,
-          "sizeText": "Cloud",
-          "contextWindow": "976K"
-        }
-      ],
-      "hasLocal": false,
-      "hasCloud": true,
-      "defaultTag": "minimax-m3.1-flash:cloud",
-      "defaultSizeGB": 0,
-      "defaultSizeText": "Cloud"
-    },
-    {
       "id": "kimi-k3.1-pro",
       "name": "kimi-k3.1-pro",
       "description": "Kimi K3.1 Pro is an open-weight, natively multimodal agentic model and our most capable 3T-class model to date, with a 1M-token context window and major gains in coding, 3D creation, financial research, and factual accuracy.",
-      "updatedRel": "1w",
+      "updatedRel": "2w",
       "updatedTitle": "November 4, 2026",
       "updatedIso": "2026-11-04T00:00:00.000Z",
       "capabilities": [
@@ -1235,7 +1196,7 @@
       "contextWindow": "1M",
       "contextTokens": 1000000,
       "paramSizes": [],
-      "popularRank": 16,
+      "popularRank": 15,
       "apiSizeGB": 1454.1,
       "tags": [
         {
@@ -1270,14 +1231,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "6.9M",
-      "pullsCount": 6862261,
+      "pullsCount": 6895414,
       "tagCount": 13,
       "contextWindow": "256K",
       "contextTokens": 256000,
       "paramSizes": [
         "27b"
       ],
-      "popularRank": 17,
+      "popularRank": 16,
       "tags": [
         {
           "tag": "qwen3.8:27b",
@@ -1379,15 +1340,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "909.4K",
-      "pullsCount": 909372,
+      "pullsText": "910.5K",
+      "pullsCount": 910458,
       "tagCount": 11,
       "contextWindow": "1M",
       "contextTokens": 1000000,
       "paramSizes": [
         "30b"
       ],
-      "popularRank": 18,
+      "popularRank": 17,
       "tags": [
         {
           "tag": "nemotron-3.5-lightning:30b",
@@ -1490,8 +1451,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "190K",
-      "pullsCount": 189951,
+      "pullsText": "191.7K",
+      "pullsCount": 191741,
       "tagCount": 9,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -1501,7 +1462,7 @@
         "9b",
         "27b"
       ],
-      "popularRank": 19,
+      "popularRank": 18,
       "tags": [
         {
           "tag": "bonsai-2:9b",
@@ -1574,8 +1535,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "490.6K",
-      "pullsCount": 490632,
+      "pullsText": "491.3K",
+      "pullsCount": 491285,
       "tagCount": 6,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -1585,7 +1546,7 @@
         "122b",
         "397b"
       ],
-      "popularRank": 20,
+      "popularRank": 19,
       "tags": [
         {
           "tag": "ornith-1.5:9b",
@@ -1667,8 +1628,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "786.9K",
-      "pullsCount": 786894,
+      "pullsText": "788K",
+      "pullsCount": 788045,
       "tagCount": 9,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -1676,7 +1637,7 @@
         "9b",
         "35b"
       ],
-      "popularRank": 21,
+      "popularRank": 20,
       "tags": [
         {
           "tag": "ornith:9b",
@@ -1769,8 +1730,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "175K",
-      "pullsCount": 174965,
+      "pullsText": "176.3K",
+      "pullsCount": 176264,
       "tagCount": 21,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -1780,7 +1741,7 @@
         "570m",
         "740m"
       ],
-      "popularRank": 22,
+      "popularRank": 21,
       "tags": [
         {
           "tag": "embeddinggemma-2:740m",
@@ -1852,15 +1813,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "103.7K",
-      "pullsCount": 103740,
+      "pullsText": "105K",
+      "pullsCount": 105004,
       "tagCount": 7,
       "contextWindow": "256K",
       "contextTokens": 256000,
       "paramSizes": [
         "40b"
       ],
-      "popularRank": 23,
+      "popularRank": 22,
       "tags": [
         {
           "tag": "flint:40b",
@@ -1953,15 +1914,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "412.4K",
-      "pullsCount": 412407,
+      "pullsText": "416.3K",
+      "pullsCount": 416323,
       "tagCount": 15,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "30b"
       ],
-      "popularRank": 24,
+      "popularRank": 23,
       "tags": [
         {
           "tag": "muse-glimmer:30b",
@@ -2064,8 +2025,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "173.8K",
-      "pullsCount": 173835,
+      "pullsText": "174.9K",
+      "pullsCount": 174936,
       "tagCount": 13,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -2073,7 +2034,7 @@
         "0.8b",
         "4b"
       ],
-      "popularRank": 25,
+      "popularRank": 24,
       "tags": [
         {
           "tag": "tev1:4b",
@@ -2162,8 +2123,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "306.7K",
-      "pullsCount": 306692,
+      "pullsText": "308K",
+      "pullsCount": 307956,
       "tagCount": 49,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -2172,7 +2133,7 @@
         "8b",
         "30b"
       ],
-      "popularRank": 26,
+      "popularRank": 25,
       "tags": [
         {
           "tag": "granite4.2:8b",
@@ -2255,13 +2216,13 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "261.8K",
-      "pullsCount": 261788,
+      "pullsText": "262.2K",
+      "pullsCount": 262173,
       "tagCount": 6,
       "contextWindow": "256K",
       "contextTokens": 256000,
       "paramSizes": [],
-      "popularRank": 27,
+      "popularRank": 26,
       "tags": [
         {
           "tag": "qwen3.8-flash-next:125b-a6b-nvfp4",
@@ -2342,15 +2303,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "126K",
-      "pullsCount": 126041,
+      "pullsText": "126.5K",
+      "pullsCount": 126512,
       "tagCount": 5,
       "contextWindow": "4K",
       "contextTokens": 4000,
       "paramSizes": [
         "2b"
       ],
-      "popularRank": 28,
+      "popularRank": 27,
       "tags": [
         {
           "tag": "strands-decider:2b",
@@ -2410,44 +2371,6 @@
       "defaultSizeText": "2.0GB"
     },
     {
-      "id": "beam",
-      "name": "beam",
-      "description": "Beam is an open model by Reflection designed to deliver strong performance for areas such as agentic tool use, coding and general reasoning with an emphasis on token efficient usage.",
-      "updatedRel": "1mo",
-      "updatedTitle": "October 16, 2026",
-      "updatedIso": "2026-10-16T00:00:00.000Z",
-      "capabilities": [
-        "tools",
-        "thinking"
-      ],
-      "isCloud": true,
-      "isLocal": false,
-      "pullsText": "",
-      "pullsCount": 0,
-      "tagCount": 1,
-      "contextWindow": "1M",
-      "contextTokens": 1000000,
-      "paramSizes": [],
-      "popularRank": 29,
-      "tags": [
-        {
-          "tag": "beam:cloud",
-          "shortTag": "cloud",
-          "isLatest": false,
-          "isCloud": true,
-          "sizeGB": 0,
-          "minSizeGB": 0,
-          "sizeText": "Cloud",
-          "contextWindow": "1M"
-        }
-      ],
-      "hasLocal": false,
-      "hasCloud": true,
-      "defaultTag": "beam:cloud",
-      "defaultSizeGB": 0,
-      "defaultSizeText": "Cloud"
-    },
-    {
       "id": "d1",
       "name": "d1",
       "description": "d1 is a 3B decision model from Liquid AI, built on LFM2.5-VL-3B",
@@ -2460,8 +2383,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "80.4K",
-      "pullsCount": 80370,
+      "pullsText": "81.4K",
+      "pullsCount": 81434,
       "tagCount": 7,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -2469,7 +2392,7 @@
         "2b",
         "3b"
       ],
-      "popularRank": 30,
+      "popularRank": 28,
       "tags": [
         {
           "tag": "d1:3b",
@@ -2561,15 +2484,15 @@
       ],
       "isCloud": true,
       "isLocal": true,
-      "pullsText": "115.1K",
-      "pullsCount": 115140,
+      "pullsText": "116.1K",
+      "pullsCount": 116140,
       "tagCount": 9,
       "contextWindow": "64K",
       "contextTokens": 64000,
       "paramSizes": [
         "27b"
       ],
-      "popularRank": 31,
+      "popularRank": 29,
       "apiSizeGB": 51.2,
       "tags": [
         {
@@ -2660,6 +2583,44 @@
       "defaultSizeText": "18GB - 20GB"
     },
     {
+      "id": "beam",
+      "name": "beam",
+      "description": "Beam is an open model by Reflection designed to deliver strong performance for areas such as agentic tool use, coding and general reasoning with an emphasis on token efficient usage.",
+      "updatedRel": "1mo",
+      "updatedTitle": "October 16, 2026",
+      "updatedIso": "2026-10-16T00:00:00.000Z",
+      "capabilities": [
+        "tools",
+        "thinking"
+      ],
+      "isCloud": true,
+      "isLocal": false,
+      "pullsText": "",
+      "pullsCount": 0,
+      "tagCount": 1,
+      "contextWindow": "1M",
+      "contextTokens": 1000000,
+      "paramSizes": [],
+      "popularRank": 30,
+      "tags": [
+        {
+          "tag": "beam:cloud",
+          "shortTag": "cloud",
+          "isLatest": false,
+          "isCloud": true,
+          "sizeGB": 0,
+          "minSizeGB": 0,
+          "sizeText": "Cloud",
+          "contextWindow": "1M"
+        }
+      ],
+      "hasLocal": false,
+      "hasCloud": true,
+      "defaultTag": "beam:cloud",
+      "defaultSizeGB": 0,
+      "defaultSizeText": "Cloud"
+    },
+    {
       "id": "minimax-m3",
       "name": "minimax-m3",
       "description": "MiniMax M3: Coding & Agentic Frontier. 1M context window. Native Multimodality.",
@@ -2679,7 +2640,7 @@
       "contextWindow": "500K",
       "contextTokens": 500000,
       "paramSizes": [],
-      "popularRank": 32,
+      "popularRank": 31,
       "tags": [
         {
           "tag": "minimax-m3:cloud",
@@ -2712,8 +2673,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "66.2K",
-      "pullsCount": 66200,
+      "pullsText": "67.3K",
+      "pullsCount": 67257,
       "tagCount": 8,
       "contextWindow": "125K",
       "contextTokens": 125000,
@@ -2721,7 +2682,7 @@
         "600m",
         "2b"
       ],
-      "popularRank": 33,
+      "popularRank": 32,
       "tags": [
         {
           "tag": "d1-omni:600m",
@@ -2814,15 +2775,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "103.8K",
-      "pullsCount": 103835,
+      "pullsText": "104.7K",
+      "pullsCount": 104714,
       "tagCount": 8,
       "contextWindow": "256K",
       "contextTokens": 256000,
       "paramSizes": [
         "9b"
       ],
-      "popularRank": 34,
+      "popularRank": 33,
       "tags": [
         {
           "tag": "nimble:9b",
@@ -2930,7 +2891,7 @@
       "contextWindow": "1M",
       "contextTokens": 1000000,
       "paramSizes": [],
-      "popularRank": 35,
+      "popularRank": 34,
       "tags": [
         {
           "tag": "glm-5.2:cloud",
@@ -2962,15 +2923,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "91K",
-      "pullsCount": 91033,
+      "pullsText": "92K",
+      "pullsCount": 91963,
       "tagCount": 5,
       "contextWindow": "256K",
       "contextTokens": 256000,
       "paramSizes": [
         "9b"
       ],
-      "popularRank": 36,
+      "popularRank": 35,
       "tags": [
         {
           "tag": "clef-flash:9b",
@@ -3030,6 +2991,45 @@
       "defaultSizeText": "11GB - 12GB"
     },
     {
+      "id": "minimax-m3.1-flash",
+      "name": "minimax-m3.1-flash",
+      "description": "As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%.",
+      "updatedRel": "1mo",
+      "updatedTitle": "October 19, 2026",
+      "updatedIso": "2026-10-19T00:00:00.000Z",
+      "capabilities": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
+      "isCloud": true,
+      "isLocal": false,
+      "pullsText": "",
+      "pullsCount": 0,
+      "tagCount": 1,
+      "contextWindow": "976K",
+      "contextTokens": 976000,
+      "paramSizes": [],
+      "popularRank": 36,
+      "tags": [
+        {
+          "tag": "minimax-m3.1-flash:cloud",
+          "shortTag": "cloud",
+          "isLatest": false,
+          "isCloud": true,
+          "sizeGB": 0,
+          "minSizeGB": 0,
+          "sizeText": "Cloud",
+          "contextWindow": "976K"
+        }
+      ],
+      "hasLocal": false,
+      "hasCloud": true,
+      "defaultTag": "minimax-m3.1-flash:cloud",
+      "defaultSizeGB": 0,
+      "defaultSizeText": "Cloud"
+    },
+    {
       "id": "nemotron-3.5-bolt",
       "name": "nemotron-3.5-bolt",
       "description": "Nemotron 3.5 Bolt is NVIDIA’s compact vision-language model for local coding, reasoning, and tool use.",
@@ -3044,8 +3044,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "73.8K",
-      "pullsCount": 73765,
+      "pullsText": "74.4K",
+      "pullsCount": 74400,
       "tagCount": 10,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -3154,8 +3154,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "358.5K",
-      "pullsCount": 358523,
+      "pullsText": "360.2K",
+      "pullsCount": 360242,
       "tagCount": 10,
       "contextWindow": "125K",
       "contextTokens": 125000,
@@ -3255,8 +3255,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "49.2K",
-      "pullsCount": 49184,
+      "pullsText": "49.9K",
+      "pullsCount": 49949,
       "tagCount": 6,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -3385,8 +3385,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "198.8K",
-      "pullsCount": 198809,
+      "pullsText": "199.2K",
+      "pullsCount": 199181,
       "tagCount": 8,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -3473,8 +3473,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "157.9K",
-      "pullsCount": 157902,
+      "pullsText": "158.1K",
+      "pullsCount": 158121,
       "tagCount": 7,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -3600,8 +3600,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "32.1K",
-      "pullsCount": 32107,
+      "pullsText": "32.5K",
+      "pullsCount": 32523,
       "tagCount": 16,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -3719,8 +3719,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "31.7K",
-      "pullsCount": 31686,
+      "pullsText": "32K",
+      "pullsCount": 31956,
       "tagCount": 8,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -3907,8 +3907,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "39.7K",
-      "pullsCount": 39667,
+      "pullsText": "39.9K",
+      "pullsCount": 39926,
       "tagCount": 9,
       "contextWindow": "1M",
       "contextTokens": 1000000,
@@ -4056,8 +4056,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "30K",
-      "pullsCount": 30008,
+      "pullsText": "30.3K",
+      "pullsCount": 30302,
       "tagCount": 7,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -4154,8 +4154,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "93.2K",
-      "pullsCount": 93163,
+      "pullsText": "93.4K",
+      "pullsCount": 93351,
       "tagCount": 7,
       "contextWindow": "488K",
       "contextTokens": 488000,
@@ -4251,8 +4251,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "100.6K",
-      "pullsCount": 100597,
+      "pullsText": "101K",
+      "pullsCount": 101015,
       "tagCount": 13,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -4360,8 +4360,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "79K",
-      "pullsCount": 79048,
+      "pullsText": "79.3K",
+      "pullsCount": 79283,
       "tagCount": 13,
       "contextWindow": "40K",
       "contextTokens": 40000,
@@ -4553,7 +4553,7 @@
       "isCloud": true,
       "isLocal": true,
       "pullsText": "29.4M",
-      "pullsCount": 29411126,
+      "pullsCount": 29431500,
       "tagCount": 51,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -4658,8 +4658,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "26.6M",
-      "pullsCount": 26642968,
+      "pullsText": "26.7M",
+      "pullsCount": 26689454,
       "tagCount": 72,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -4776,7 +4776,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "7.7M",
-      "pullsCount": 7721329,
+      "pullsCount": 7726628,
       "tagCount": 35,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -4877,7 +4877,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "9.4M",
-      "pullsCount": 9428714,
+      "pullsCount": 9436079,
       "tagCount": 3,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -4935,7 +4935,7 @@
       "isCloud": true,
       "isLocal": true,
       "pullsText": "3.1M",
-      "pullsCount": 3069266,
+      "pullsCount": 3069543,
       "tagCount": 7,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -5035,7 +5035,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3M",
-      "pullsCount": 2957569,
+      "pullsCount": 2958762,
       "tagCount": 13,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -5127,7 +5127,7 @@
       "isCloud": true,
       "isLocal": true,
       "pullsText": "2.8M",
-      "pullsCount": 2841577,
+      "pullsCount": 2845907,
       "tagCount": 6,
       "contextWindow": "384K",
       "contextTokens": 384000,
@@ -5217,7 +5217,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.2M",
-      "pullsCount": 2193459,
+      "pullsCount": 2195556,
       "tagCount": 4,
       "contextWindow": "198K",
       "contextTokens": 198000,
@@ -5284,7 +5284,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1157071,
+      "pullsCount": 1157358,
       "tagCount": 6,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -5374,7 +5374,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.6M",
-      "pullsCount": 1629799,
+      "pullsCount": 1631255,
       "tagCount": 13,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -5466,7 +5466,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1310371,
+      "pullsCount": 1310683,
       "tagCount": 5,
       "contextWindow": "125K",
       "contextTokens": 125000,
@@ -5547,8 +5547,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "748K",
-      "pullsCount": 747978,
+      "pullsText": "748.2K",
+      "pullsCount": 748190,
       "tagCount": 9,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -5657,7 +5657,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.4M",
-      "pullsCount": 1428491,
+      "pullsCount": 1428969,
       "tagCount": 0,
       "contextWindow": "",
       "contextTokens": 0,
@@ -5693,8 +5693,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "652.9K",
-      "pullsCount": 652934,
+      "pullsText": "654.1K",
+      "pullsCount": 654099,
       "tagCount": 48,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -5796,7 +5796,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1M",
-      "pullsCount": 1014120,
+      "pullsCount": 1014822,
       "tagCount": 19,
       "contextWindow": "1M",
       "contextTokens": 1000000,
@@ -5934,8 +5934,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "490.2K",
-      "pullsCount": 490158,
+      "pullsText": "490.7K",
+      "pullsCount": 490739,
       "tagCount": 9,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -6036,8 +6036,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "444.4K",
-      "pullsCount": 444378,
+      "pullsText": "444.5K",
+      "pullsCount": 444529,
       "tagCount": 5,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -6155,8 +6155,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "704.1K",
-      "pullsCount": 704085,
+      "pullsText": "704.7K",
+      "pullsCount": 704712,
       "tagCount": 3,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -6214,8 +6214,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "534.1K",
-      "pullsCount": 534079,
+      "pullsText": "534.5K",
+      "pullsCount": 534478,
       "tagCount": 5,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -6294,8 +6294,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "490.5K",
-      "pullsCount": 490517,
+      "pullsText": "490.8K",
+      "pullsCount": 490775,
       "tagCount": 15,
       "contextWindow": "64K",
       "contextTokens": 64000,
@@ -6394,8 +6394,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "233K",
-      "pullsCount": 233033,
+      "pullsText": "233.5K",
+      "pullsCount": 233462,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -6473,8 +6473,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "384.3K",
-      "pullsCount": 384305,
+      "pullsText": "384.5K",
+      "pullsCount": 384537,
       "tagCount": 5,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -6553,8 +6553,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "322.9K",
-      "pullsCount": 322877,
+      "pullsText": "323K",
+      "pullsCount": 323037,
       "tagCount": 10,
       "contextWindow": "64K",
       "contextTokens": 64000,
@@ -6663,8 +6663,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "173.8K",
-      "pullsCount": 173779,
+      "pullsText": "174.1K",
+      "pullsCount": 174053,
       "tagCount": 9,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -6761,83 +6761,6 @@
       "defaultSizeText": "18GB - 24GB"
     },
     {
-      "id": "cogito-2.1",
-      "name": "cogito-2.1",
-      "description": "The Cogito v2.1 LLMs are instruction tuned generative models. All models are released under MIT license for commercial use.",
-      "updatedRel": "12mo",
-      "updatedTitle": "November 19, 2025",
-      "updatedIso": "2025-11-19T00:00:00.000Z",
-      "capabilities": [],
-      "isCloud": false,
-      "isLocal": true,
-      "pullsText": "244.5K",
-      "pullsCount": 244452,
-      "tagCount": 5,
-      "contextWindow": "160K",
-      "contextTokens": 160000,
-      "paramSizes": [
-        "671b"
-      ],
-      "popularRank": 82,
-      "tags": [
-        {
-          "tag": "cogito-2.1:671b",
-          "shortTag": "671b",
-          "isLatest": true,
-          "isCloud": false,
-          "sizeGB": 1331.2,
-          "minSizeGB": 1331.2,
-          "sizeText": "1.3TB",
-          "contextWindow": "160K"
-        },
-        {
-          "tag": "cogito-2.1:latest",
-          "shortTag": "latest",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 1331.2,
-          "minSizeGB": 1331.2,
-          "sizeText": "1.3TB",
-          "contextWindow": "160K"
-        },
-        {
-          "tag": "cogito-2.1:671b-q4_K_M",
-          "shortTag": "671b-q4_K_M",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 404,
-          "minSizeGB": 404,
-          "sizeText": "404GB",
-          "contextWindow": "160K"
-        },
-        {
-          "tag": "cogito-2.1:671b-q8_0",
-          "shortTag": "671b-q8_0",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 713,
-          "minSizeGB": 713,
-          "sizeText": "713GB",
-          "contextWindow": "160K"
-        },
-        {
-          "tag": "cogito-2.1:671b-fp16",
-          "shortTag": "671b-fp16",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 1331.2,
-          "minSizeGB": 1331.2,
-          "sizeText": "1.3TB",
-          "contextWindow": "160K"
-        }
-      ],
-      "hasLocal": true,
-      "hasCloud": false,
-      "defaultTag": "cogito-2.1:671b",
-      "defaultSizeGB": 1331.2,
-      "defaultSizeText": "1.3TB"
-    },
-    {
       "id": "functiongemma",
       "name": "functiongemma",
       "description": "FunctionGemma is a specialized version of Google's Gemma 3 270M model fine-tuned explicitly for function calling.",
@@ -6849,15 +6772,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "222K",
-      "pullsCount": 221993,
+      "pullsText": "222.5K",
+      "pullsCount": 222459,
       "tagCount": 4,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [
         "270m"
       ],
-      "popularRank": 83,
+      "popularRank": 82,
       "tags": [
         {
           "tag": "functiongemma:270m",
@@ -6919,15 +6842,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "52.2K",
-      "pullsCount": 52209,
+      "pullsText": "52.4K",
+      "pullsCount": 52361,
       "tagCount": 16,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "8b"
       ],
-      "popularRank": 84,
+      "popularRank": 83,
       "tags": [
         {
           "tag": "granite4.1-guardian:8b",
@@ -7039,13 +6962,13 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "48.1K",
-      "pullsCount": 48111,
+      "pullsText": "48.3K",
+      "pullsCount": 48260,
       "tagCount": 7,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [],
-      "popularRank": 85,
+      "popularRank": 84,
       "tags": [
         {
           "tag": "laguna-xs.2:latest",
@@ -7128,7 +7051,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "95.2M",
-      "pullsCount": 95194562,
+      "pullsCount": 95208417,
       "tagCount": 35,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -7141,7 +7064,7 @@
         "70b",
         "671b"
       ],
-      "popularRank": 86,
+      "popularRank": 85,
       "tags": [
         {
           "tag": "deepseek-r1:8b",
@@ -7243,7 +7166,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "121.2M",
-      "pullsCount": 121204008,
+      "pullsCount": 121213916,
       "tagCount": 93,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -7252,7 +7175,7 @@
         "70b",
         "405b"
       ],
-      "popularRank": 87,
+      "popularRank": 86,
       "tags": [
         {
           "tag": "llama3.1:8b",
@@ -7333,8 +7256,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "87.9M",
-      "pullsCount": 87923173,
+      "pullsText": "88M",
+      "pullsCount": 87953401,
       "tagCount": 63,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -7342,7 +7265,7 @@
         "1b",
         "3b"
       ],
-      "popularRank": 88,
+      "popularRank": 87,
       "tags": [
         {
           "tag": "llama3.2:3b",
@@ -7435,7 +7358,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "43.9M",
-      "pullsCount": 43897367,
+      "pullsCount": 43941087,
       "tagCount": 58,
       "contextWindow": "40K",
       "contextTokens": 40000,
@@ -7449,7 +7372,7 @@
         "32b",
         "235b"
       ],
-      "popularRank": 89,
+      "popularRank": 88,
       "tags": [
         {
           "tag": "qwen3:8b",
@@ -7551,7 +7474,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "42M",
-      "pullsCount": 41958607,
+      "pullsCount": 41967881,
       "tagCount": 29,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -7562,7 +7485,7 @@
         "12b",
         "27b"
       ],
-      "popularRank": 90,
+      "popularRank": 89,
       "tags": [
         {
           "tag": "gemma3:4b",
@@ -7644,12 +7567,12 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "98.2M",
-      "pullsCount": 98171294,
+      "pullsCount": 98208155,
       "tagCount": 3,
       "contextWindow": "2K",
       "contextTokens": 2000,
       "paramSizes": [],
-      "popularRank": 91,
+      "popularRank": 90,
       "tags": [
         {
           "tag": "nomic-embed-text:v1.5",
@@ -7700,8 +7623,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "46.2M",
-      "pullsCount": 46230740,
+      "pullsText": "46.3M",
+      "pullsCount": 46271282,
       "tagCount": 133,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -7714,7 +7637,7 @@
         "32b",
         "72b"
       ],
-      "popularRank": 92,
+      "popularRank": 91,
       "tags": [
         {
           "tag": "qwen2.5:7b",
@@ -7817,7 +7740,7 @@
       "isCloud": true,
       "isLocal": true,
       "pullsText": "15.8M",
-      "pullsCount": 15798836,
+      "pullsCount": 15806600,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -7825,7 +7748,7 @@
         "20b",
         "120b"
       ],
-      "popularRank": 93,
+      "popularRank": 92,
       "apiSizeGB": 12.8,
       "tags": [
         {
@@ -7886,7 +7809,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "37.5M",
-      "pullsCount": 37486614,
+      "pullsCount": 37514474,
       "tagCount": 94,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -7895,7 +7818,7 @@
         "9b",
         "27b"
       ],
-      "popularRank": 94,
+      "popularRank": 93,
       "tags": [
         {
           "tag": "gemma2:9b",
@@ -7977,7 +7900,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "11.1M",
-      "pullsCount": 11104874,
+      "pullsCount": 11120077,
       "tagCount": 9,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -7985,7 +7908,7 @@
         "30b",
         "480b"
       ],
-      "popularRank": 95,
+      "popularRank": 94,
       "tags": [
         {
           "tag": "qwen3-coder:30b",
@@ -8077,7 +8000,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "23.9M",
-      "pullsCount": 23870626,
+      "pullsCount": 23884707,
       "tagCount": 199,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -8089,7 +8012,7 @@
         "14b",
         "32b"
       ],
-      "popularRank": 96,
+      "popularRank": 95,
       "tags": [
         {
           "tag": "qwen2.5-coder:7b",
@@ -8183,7 +8106,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "7.3M",
-      "pullsCount": 7318357,
+      "pullsCount": 7331520,
       "tagCount": 57,
       "contextWindow": "256K",
       "contextTokens": 256000,
@@ -8195,7 +8118,7 @@
         "32b",
         "235b"
       ],
-      "popularRank": 97,
+      "popularRank": 96,
       "tags": [
         {
           "tag": "qwen3-vl:8b",
@@ -8285,7 +8208,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "26M",
-      "pullsCount": 25988031,
+      "pullsCount": 25990485,
       "tagCount": 68,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -8293,7 +8216,7 @@
         "8b",
         "70b"
       ],
-      "popularRank": 98,
+      "popularRank": 97,
       "tags": [
         {
           "tag": "llama3:8b",
@@ -8365,14 +8288,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "34.2M",
-      "pullsCount": 34243805,
+      "pullsCount": 34247811,
       "tagCount": 84,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [
         "7b"
       ],
-      "popularRank": 99,
+      "popularRank": 98,
       "tags": [
         {
           "tag": "mistral:7b",
@@ -8462,7 +8385,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "18.4M",
-      "pullsCount": 18385757,
+      "pullsCount": 18387331,
       "tagCount": 72,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -8470,7 +8393,7 @@
         "3.8b",
         "14b"
       ],
-      "popularRank": 100,
+      "popularRank": 99,
       "tags": [
         {
           "tag": "phi3:3.8b",
@@ -8552,7 +8475,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "4.7M",
-      "pullsCount": 4700881,
+      "pullsCount": 4722188,
       "tagCount": 12,
       "contextWindow": "40K",
       "contextTokens": 40000,
@@ -8561,7 +8484,7 @@
         "4b",
         "8b"
       ],
-      "popularRank": 101,
+      "popularRank": 100,
       "tags": [
         {
           "tag": "qwen3-embedding:8b",
@@ -8643,14 +8566,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "17.1M",
-      "pullsCount": 17090984,
+      "pullsCount": 17104245,
       "tagCount": 4,
       "contextWindow": "",
       "contextTokens": 0,
       "paramSizes": [
         "335m"
       ],
-      "popularRank": 102,
+      "popularRank": 101,
       "tags": [
         {
           "tag": "mxbai-embed-large:335m",
@@ -8712,7 +8635,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "6.2M",
-      "pullsCount": 6233515,
+      "pullsCount": 6249835,
       "tagCount": 17,
       "contextWindow": "125K",
       "contextTokens": 125000,
@@ -8722,7 +8645,7 @@
         "32b",
         "72b"
       ],
-      "popularRank": 103,
+      "popularRank": 102,
       "tags": [
         {
           "tag": "qwen2.5vl:7b",
@@ -8792,14 +8715,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "7.8M",
-      "pullsCount": 7812585,
+      "pullsCount": 7813232,
       "tagCount": 5,
       "contextWindow": "16K",
       "contextTokens": 16000,
       "paramSizes": [
         "14b"
       ],
-      "popularRank": 104,
+      "popularRank": 103,
       "tags": [
         {
           "tag": "phi4:14b",
@@ -8871,7 +8794,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "15.4M",
-      "pullsCount": 15412917,
+      "pullsCount": 15414849,
       "tagCount": 98,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -8880,7 +8803,7 @@
         "13b",
         "34b"
       ],
-      "popularRank": 105,
+      "popularRank": 104,
       "tags": [
         {
           "tag": "llava:7b",
@@ -8951,15 +8874,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "8.6M",
-      "pullsCount": 8629269,
+      "pullsText": "8.7M",
+      "pullsCount": 8658586,
       "tagCount": 3,
       "contextWindow": "8K",
       "contextTokens": 8000,
       "paramSizes": [
         "567m"
       ],
-      "popularRank": 106,
+      "popularRank": 105,
       "tags": [
         {
           "tag": "bge-m3:567m",
@@ -9011,14 +8934,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.9M",
-      "pullsCount": 2865818,
+      "pullsCount": 2869948,
       "tagCount": 5,
       "contextWindow": "2K",
       "contextTokens": 2000,
       "paramSizes": [
         "300m"
       ],
-      "popularRank": 107,
+      "popularRank": 106,
       "tags": [
         {
           "tag": "embeddinggemma:300m",
@@ -9090,7 +9013,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "5.6M",
-      "pullsCount": 5643998,
+      "pullsCount": 5644833,
       "tagCount": 9,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -9098,7 +9021,7 @@
         "11b",
         "90b"
       ],
-      "popularRank": 108,
+      "popularRank": 107,
       "tags": [
         {
           "tag": "llama3.2-vision:11b",
@@ -9188,7 +9111,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "8.4M",
-      "pullsCount": 8447253,
+      "pullsCount": 8448902,
       "tagCount": 102,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -9196,7 +9119,7 @@
         "2b",
         "7b"
       ],
-      "popularRank": 109,
+      "popularRank": 108,
       "tags": [
         {
           "tag": "gemma:7b",
@@ -9278,14 +9201,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "5.8M",
-      "pullsCount": 5762507,
+      "pullsCount": 5764550,
       "tagCount": 17,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [
         "8b"
       ],
-      "popularRank": 110,
+      "popularRank": 109,
       "tags": [
         {
           "tag": "minicpm-v:8b",
@@ -9385,7 +9308,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "8.3M",
-      "pullsCount": 8310765,
+      "pullsCount": 8314436,
       "tagCount": 379,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -9399,7 +9322,7 @@
         "72b",
         "110b"
       ],
-      "popularRank": 111,
+      "popularRank": 110,
       "tags": [
         {
           "tag": "qwen:4b",
@@ -9499,14 +9422,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "4.3M",
-      "pullsCount": 4267246,
+      "pullsCount": 4268018,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "8b"
       ],
-      "popularRank": 112,
+      "popularRank": 111,
       "tags": [
         {
           "tag": "dolphin3:8b",
@@ -9578,14 +9501,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "4.5M",
-      "pullsCount": 4506029,
+      "pullsCount": 4507133,
       "tagCount": 14,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "70b"
       ],
-      "popularRank": 113,
+      "popularRank": 112,
       "tags": [
         {
           "tag": "llama3.3:70b",
@@ -9687,7 +9610,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "6.4M",
-      "pullsCount": 6371534,
+      "pullsCount": 6372847,
       "tagCount": 97,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -9697,7 +9620,7 @@
         "7b",
         "72b"
       ],
-      "popularRank": 114,
+      "popularRank": 113,
       "tags": [
         {
           "tag": "qwen2:7b",
@@ -9769,14 +9692,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "5.8M",
-      "pullsCount": 5799729,
+      "pullsCount": 5800369,
       "tagCount": 17,
       "contextWindow": "1000K",
       "contextTokens": 1000000,
       "paramSizes": [
         "12b"
       ],
-      "popularRank": 115,
+      "popularRank": 114,
       "tags": [
         {
           "tag": "mistral-nemo:12b",
@@ -9876,14 +9799,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.9M",
-      "pullsCount": 3865361,
+      "pullsCount": 3865613,
       "tagCount": 5,
       "contextWindow": "160K",
       "contextTokens": 160000,
       "paramSizes": [
         "671b"
       ],
-      "popularRank": 116,
+      "popularRank": 115,
       "tags": [
         {
           "tag": "deepseek-v3:671b",
@@ -9956,14 +9879,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.5M",
-      "pullsCount": 2541598,
+      "pullsCount": 2542140,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "24b"
       ],
-      "popularRank": 117,
+      "popularRank": 116,
       "tags": [
         {
           "tag": "mistral-small3.2:24b",
@@ -10033,7 +9956,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.8M",
-      "pullsCount": 3790546,
+      "pullsCount": 3790840,
       "tagCount": 9,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -10041,7 +9964,7 @@
         "7b",
         "13b"
       ],
-      "popularRank": 118,
+      "popularRank": 117,
       "tags": [
         {
           "tag": "olmo2:7b",
@@ -10133,7 +10056,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.5M",
-      "pullsCount": 2518301,
+      "pullsCount": 2520932,
       "tagCount": 11,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -10141,7 +10064,7 @@
         "e2b",
         "e4b"
       ],
-      "popularRank": 119,
+      "popularRank": 118,
       "tags": [
         {
           "tag": "gemma3n:e4b",
@@ -10233,7 +10156,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "4.2M",
-      "pullsCount": 4219481,
+      "pullsCount": 4220944,
       "tagCount": 49,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -10242,7 +10165,7 @@
         "360m",
         "1.7b"
       ],
-      "popularRank": 120,
+      "popularRank": 119,
       "tags": [
         {
           "tag": "smollm2:1.7b",
@@ -10322,7 +10245,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "8.4M",
-      "pullsCount": 8429956,
+      "pullsCount": 8439205,
       "tagCount": 199,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -10332,7 +10255,7 @@
         "34b",
         "70b"
       ],
-      "popularRank": 121,
+      "popularRank": 120,
       "tags": [
         {
           "tag": "codellama:7b",
@@ -10431,15 +10354,15 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "6.8M",
-      "pullsCount": 6848788,
+      "pullsText": "6.9M",
+      "pullsCount": 6853815,
       "tagCount": 36,
       "contextWindow": "2K",
       "contextTokens": 2000,
       "paramSizes": [
         "1.1b"
       ],
-      "popularRank": 122,
+      "popularRank": 121,
       "tags": [
         {
           "tag": "tinyllama:1.1b",
@@ -10511,7 +10434,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.6M",
-      "pullsCount": 1605784,
+      "pullsCount": 1606535,
       "tagCount": 17,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -10520,7 +10443,7 @@
         "1b",
         "3b"
       ],
-      "popularRank": 123,
+      "popularRank": 122,
       "tags": [
         {
           "tag": "granite4:latest",
@@ -10590,7 +10513,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "7.6M",
-      "pullsCount": 7647696,
+      "pullsCount": 7648679,
       "tagCount": 102,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -10599,7 +10522,7 @@
         "13b",
         "70b"
       ],
-      "popularRank": 124,
+      "popularRank": 123,
       "tags": [
         {
           "tag": "llama2:7b",
@@ -10681,7 +10604,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.1M",
-      "pullsCount": 3098128,
+      "pullsCount": 3098716,
       "tagCount": 33,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -10689,7 +10612,7 @@
         "1b",
         "3b"
       ],
-      "popularRank": 125,
+      "popularRank": 124,
       "tags": [
         {
           "tag": "granite3.1-moe:3b",
@@ -10781,7 +10704,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.2M",
-      "pullsCount": 2161235,
+      "pullsCount": 2161755,
       "tagCount": 20,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -10792,7 +10715,7 @@
         "32b",
         "70b"
       ],
-      "popularRank": 126,
+      "popularRank": 125,
       "tags": [
         {
           "tag": "cogito:8b",
@@ -10872,7 +10795,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.7M",
-      "pullsCount": 2667729,
+      "pullsCount": 2668322,
       "tagCount": 17,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -10882,7 +10805,7 @@
         "7b",
         "10b"
       ],
-      "popularRank": 127,
+      "popularRank": 126,
       "tags": [
         {
           "tag": "falcon3:7b",
@@ -10954,7 +10877,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.2M",
-      "pullsCount": 3191873,
+      "pullsCount": 3192380,
       "tagCount": 21,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -10962,7 +10885,7 @@
         "22b",
         "24b"
       ],
-      "popularRank": 128,
+      "popularRank": 127,
       "tags": [
         {
           "tag": "mistral-small:24b",
@@ -11054,12 +10977,12 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.3M",
-      "pullsCount": 2262704,
+      "pullsCount": 2263364,
       "tagCount": 3,
       "contextWindow": "256K",
       "contextTokens": 256000,
       "paramSizes": [],
-      "popularRank": 129,
+      "popularRank": 128,
       "tags": [
         {
           "tag": "qwen3-coder-next:latest",
@@ -11109,7 +11032,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "4.9M",
-      "pullsCount": 4896676,
+      "pullsCount": 4898666,
       "tagCount": 102,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -11118,7 +11041,7 @@
         "6.7b",
         "33b"
       ],
-      "popularRank": 130,
+      "popularRank": 129,
       "tags": [
         {
           "tag": "deepseek-coder:1.3b",
@@ -11201,7 +11124,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.9M",
-      "pullsCount": 1924513,
+      "pullsCount": 1925168,
       "tagCount": 11,
       "contextWindow": "10M",
       "contextTokens": 10000000,
@@ -11209,7 +11132,7 @@
         "16x17b",
         "128x17b"
       ],
-      "popularRank": 131,
+      "popularRank": 130,
       "tags": [
         {
           "tag": "llama4:16x17b",
@@ -11279,7 +11202,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.4M",
-      "pullsCount": 3395639,
+      "pullsCount": 3397115,
       "tagCount": 64,
       "contextWindow": "160K",
       "contextTokens": 160000,
@@ -11287,7 +11210,7 @@
         "16b",
         "236b"
       ],
-      "popularRank": 132,
+      "popularRank": 131,
       "tags": [
         {
           "tag": "deepseek-coder-v2:16b",
@@ -11367,14 +11290,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.7M",
-      "pullsCount": 1734949,
+      "pullsCount": 1735299,
       "tagCount": 9,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [
         "14b"
       ],
-      "popularRank": 133,
+      "popularRank": 132,
       "tags": [
         {
           "tag": "phi4-reasoning:14b",
@@ -11466,7 +11389,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.9M",
-      "pullsCount": 3938593,
+      "pullsCount": 3940833,
       "tagCount": 10,
       "contextWindow": "",
       "contextTokens": 0,
@@ -11474,7 +11397,7 @@
         "22m",
         "33m"
       ],
-      "popularRank": 134,
+      "popularRank": 133,
       "tags": [
         {
           "tag": "all-minilm:22m",
@@ -11557,14 +11480,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.5M",
-      "pullsCount": 1497162,
+      "pullsCount": 1497355,
       "tagCount": 5,
       "contextWindow": "39K",
       "contextTokens": 39000,
       "paramSizes": [
         "24b"
       ],
-      "popularRank": 135,
+      "popularRank": 134,
       "tags": [
         {
           "tag": "magistral:24b",
@@ -11636,14 +11559,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.3M",
-      "pullsCount": 2325410,
+      "pullsCount": 2325633,
       "tagCount": 8,
       "contextWindow": "40K",
       "contextTokens": 40000,
       "paramSizes": [
         "32b"
       ],
-      "popularRank": 136,
+      "popularRank": 135,
       "tags": [
         {
           "tag": "qwq:32b",
@@ -11743,7 +11666,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.3M",
-      "pullsCount": 3340350,
+      "pullsCount": 3341204,
       "tagCount": 85,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -11751,7 +11674,7 @@
         "2b",
         "7b"
       ],
-      "popularRank": 137,
+      "popularRank": 136,
       "tags": [
         {
           "tag": "codegemma:7b",
@@ -11823,14 +11746,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.8M",
-      "pullsCount": 1775209,
+      "pullsCount": 1779820,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "3.8b"
       ],
-      "popularRank": 138,
+      "popularRank": 137,
       "tags": [
         {
           "tag": "phi4-mini:3.8b",
@@ -11902,7 +11825,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.2M",
-      "pullsCount": 3222118,
+      "pullsCount": 3222950,
       "tagCount": 16,
       "contextWindow": "",
       "contextTokens": 0,
@@ -11913,7 +11836,7 @@
         "137m",
         "335m"
       ],
-      "popularRank": 139,
+      "popularRank": 138,
       "tags": [
         {
           "tag": "snowflake-arctic-embed:335m",
@@ -12023,7 +11946,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.4M",
-      "pullsCount": 2418641,
+      "pullsCount": 2420351,
       "tagCount": 94,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -12032,7 +11955,7 @@
         "360m",
         "1.7b"
       ],
-      "popularRank": 140,
+      "popularRank": 139,
       "tags": [
         {
           "tag": "smollm:1.7b",
@@ -12112,7 +12035,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.1M",
-      "pullsCount": 3098056,
+      "pullsCount": 3098717,
       "tagCount": 67,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -12121,7 +12044,7 @@
         "7b",
         "15b"
       ],
-      "popularRank": 141,
+      "popularRank": 140,
       "tags": [
         {
           "tag": "starcoder2:3b",
@@ -12193,14 +12116,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1134259,
+      "pullsCount": 1137716,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "24b"
       ],
-      "popularRank": 142,
+      "popularRank": 141,
       "tags": [
         {
           "tag": "devstral:24b",
@@ -12272,7 +12195,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3M",
-      "pullsCount": 2971849,
+      "pullsCount": 2972655,
       "tagCount": 70,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -12280,7 +12203,7 @@
         "8x7b",
         "8x22b"
       ],
-      "popularRank": 143,
+      "popularRank": 142,
       "tags": [
         {
           "tag": "mixtral:8x7b",
@@ -12362,14 +12285,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.3M",
-      "pullsCount": 2343977,
+      "pullsCount": 2344241,
       "tagCount": 4,
       "contextWindow": "8K",
       "contextTokens": 8000,
       "paramSizes": [
         "8b"
       ],
-      "popularRank": 144,
+      "popularRank": 143,
       "tags": [
         {
           "tag": "llava-llama3:8b",
@@ -12431,7 +12354,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1164286,
+      "pullsCount": 1164819,
       "tagCount": 3,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -12439,7 +12362,7 @@
         "2b",
         "8b"
       ],
-      "popularRank": 145,
+      "popularRank": 144,
       "tags": [
         {
           "tag": "granite3.3:8b",
@@ -12489,7 +12412,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "3.2M",
-      "pullsCount": 3189728,
+      "pullsCount": 3190597,
       "tagCount": 119,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -12499,7 +12422,7 @@
         "13b",
         "70b"
       ],
-      "popularRank": 146,
+      "popularRank": 145,
       "tags": [
         {
           "tag": "orca-mini:3b",
@@ -12571,7 +12494,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.8M",
-      "pullsCount": 1823653,
+      "pullsCount": 1824611,
       "tagCount": 65,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -12581,7 +12504,7 @@
         "70b",
         "405b"
       ],
-      "popularRank": 147,
+      "popularRank": 146,
       "tags": [
         {
           "tag": "hermes3:8b",
@@ -12653,14 +12576,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.2M",
-      "pullsCount": 2224495,
+      "pullsCount": 2225603,
       "tagCount": 18,
       "contextWindow": "2K",
       "contextTokens": 2000,
       "paramSizes": [
         "1.8b"
       ],
-      "popularRank": 148,
+      "popularRank": 147,
       "tags": [
         {
           "tag": "moondream:1.8b",
@@ -12749,8 +12672,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "2.2M",
-      "pullsCount": 2249316,
+      "pullsText": "2.3M",
+      "pullsCount": 2250048,
       "tagCount": 53,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -12758,7 +12681,7 @@
         "8b",
         "70b"
       ],
-      "popularRank": 149,
+      "popularRank": 148,
       "tags": [
         {
           "tag": "dolphin-llama3:8b",
@@ -12838,14 +12761,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1276808,
+      "pullsCount": 1276926,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "1.5b"
       ],
-      "popularRank": 150,
+      "popularRank": 149,
       "tags": [
         {
           "tag": "deepscaler:1.5b",
@@ -12917,15 +12840,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "758K",
-      "pullsCount": 758047,
+      "pullsText": "758.3K",
+      "pullsCount": 758312,
       "tagCount": 7,
       "contextWindow": "160K",
       "contextTokens": 160000,
       "paramSizes": [
         "671b"
       ],
-      "popularRank": 151,
+      "popularRank": 150,
       "tags": [
         {
           "tag": "deepseek-v3.1:671b",
@@ -13015,7 +12938,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1192504,
+      "pullsCount": 1192712,
       "tagCount": 15,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -13023,7 +12946,7 @@
         "7b",
         "32b"
       ],
-      "popularRank": 152,
+      "popularRank": 151,
       "tags": [
         {
           "tag": "openthinker:7b",
@@ -13113,7 +13036,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.8M",
-      "pullsCount": 2776740,
+      "pullsCount": 2777244,
       "tagCount": 34,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -13121,7 +13044,7 @@
         "7b",
         "70b"
       ],
-      "popularRank": 153,
+      "popularRank": 152,
       "tags": [
         {
           "tag": "llama2-uncensored:7b",
@@ -13210,8 +13133,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "994.4K",
-      "pullsCount": 994424,
+      "pullsText": "994.8K",
+      "pullsCount": 994842,
       "tagCount": 9,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -13219,7 +13142,7 @@
         "1.5b",
         "14b"
       ],
-      "popularRank": 154,
+      "popularRank": 153,
       "tags": [
         {
           "tag": "deepcoder:14b",
@@ -13312,14 +13235,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1056361,
+      "pullsCount": 1056800,
       "tagCount": 5,
       "contextWindow": "16K",
       "contextTokens": 16000,
       "paramSizes": [
         "2b"
       ],
-      "popularRank": 155,
+      "popularRank": 154,
       "tags": [
         {
           "tag": "granite3.2-vision:2b",
@@ -13391,15 +13314,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "952.6K",
-      "pullsCount": 952639,
+      "pullsText": "956.2K",
+      "pullsCount": 956152,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "24b"
       ],
-      "popularRank": 156,
+      "popularRank": 155,
       "tags": [
         {
           "tag": "mistral-small3.1:24b",
@@ -13469,7 +13392,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.7M",
-      "pullsCount": 1729954,
+      "pullsCount": 1731174,
       "tagCount": 162,
       "contextWindow": "125K",
       "contextTokens": 125000,
@@ -13479,7 +13402,7 @@
         "20b",
         "34b"
       ],
-      "popularRank": 157,
+      "popularRank": 156,
       "tags": [
         {
           "tag": "granite-code:3b",
@@ -13551,15 +13474,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "619.6K",
-      "pullsCount": 619644,
+      "pullsText": "619.9K",
+      "pullsCount": 619888,
       "tagCount": 9,
       "contextWindow": "256K",
       "contextTokens": 256000,
       "paramSizes": [
         "80b"
       ],
-      "popularRank": 158,
+      "popularRank": 157,
       "tags": [
         {
           "tag": "qwen3-next:80b",
@@ -13659,7 +13582,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.4M",
-      "pullsCount": 2397684,
+      "pullsCount": 2399992,
       "tagCount": 48,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -13667,7 +13590,7 @@
         "7b",
         "15b"
       ],
-      "popularRank": 159,
+      "popularRank": 158,
       "tags": [
         {
           "tag": "sqlcoder:7b",
@@ -13757,7 +13680,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2M",
-      "pullsCount": 2007556,
+      "pullsCount": 2008356,
       "tagCount": 70,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -13765,7 +13688,7 @@
         "8x7b",
         "8x22b"
       ],
-      "popularRank": 160,
+      "popularRank": 159,
       "tags": [
         {
           "tag": "dolphin-mixtral:8x7b",
@@ -13847,7 +13770,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1097047,
+      "pullsCount": 1097400,
       "tagCount": 33,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -13855,7 +13778,7 @@
         "2b",
         "8b"
       ],
-      "popularRank": 161,
+      "popularRank": 160,
       "tags": [
         {
           "tag": "granite3.1-dense:8b",
@@ -13945,12 +13868,12 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2M",
-      "pullsCount": 1951204,
+      "pullsCount": 1954679,
       "tagCount": 35,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [],
-      "popularRank": 162,
+      "popularRank": 161,
       "tags": [
         {
           "tag": "openhermes:v2.5",
@@ -14040,14 +13963,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.9M",
-      "pullsCount": 1907607,
+      "pullsCount": 1908702,
       "tagCount": 120,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [
         "7b"
       ],
-      "popularRank": 163,
+      "popularRank": 162,
       "tags": [
         {
           "tag": "dolphin-mistral:7b",
@@ -14147,7 +14070,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.1M",
-      "pullsCount": 2143878,
+      "pullsCount": 2147620,
       "tagCount": 100,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -14157,7 +14080,7 @@
         "7b",
         "15b"
       ],
-      "popularRank": 164,
+      "popularRank": 163,
       "tags": [
         {
           "tag": "starcoder:3b",
@@ -14229,14 +14152,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.4M",
-      "pullsCount": 1360167,
+      "pullsCount": 1360555,
       "tagCount": 32,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "123b"
       ],
-      "popularRank": 165,
+      "popularRank": 164,
       "tags": [
         {
           "tag": "mistral-large:123b",
@@ -14338,14 +14261,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.6M",
-      "pullsCount": 1595491,
+      "pullsCount": 1595959,
       "tagCount": 32,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "35b"
       ],
-      "popularRank": 166,
+      "popularRank": 165,
       "tags": [
         {
           "tag": "command-r:35b",
@@ -14437,7 +14360,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1098745,
+      "pullsCount": 1099295,
       "tagCount": 33,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -14445,7 +14368,7 @@
         "8b",
         "32b"
       ],
-      "popularRank": 167,
+      "popularRank": 166,
       "tags": [
         {
           "tag": "aya-expanse:8b",
@@ -14535,14 +14458,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "2.1M",
-      "pullsCount": 2064367,
+      "pullsCount": 2067970,
       "tagCount": 67,
       "contextWindow": "16K",
       "contextTokens": 16000,
       "paramSizes": [
         "33b"
       ],
-      "popularRank": 168,
+      "popularRank": 167,
       "tags": [
         {
           "tag": "wizardcoder:latest",
@@ -14632,7 +14555,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1114390,
+      "pullsCount": 1114997,
       "tagCount": 33,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -14640,7 +14563,7 @@
         "1b",
         "8b"
       ],
-      "popularRank": 169,
+      "popularRank": 168,
       "tags": [
         {
           "tag": "llama-guard3:8b",
@@ -14730,7 +14653,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1199167,
+      "pullsCount": 1199783,
       "tagCount": 52,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -14739,7 +14662,7 @@
         "7b",
         "72b"
       ],
-      "popularRank": 170,
+      "popularRank": 169,
       "tags": [
         {
           "tag": "qwen2-math:7b",
@@ -14821,7 +14744,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1089761,
+      "pullsCount": 1090235,
       "tagCount": 33,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -14829,7 +14752,7 @@
         "2b",
         "8b"
       ],
-      "popularRank": 171,
+      "popularRank": 170,
       "tags": [
         {
           "tag": "granite3-dense:2b",
@@ -14909,103 +14832,6 @@
       "defaultSizeText": "1.6GB"
     },
     {
-      "id": "codestral",
-      "name": "codestral",
-      "description": "Codestral is Mistral AI’s first-ever code model designed for code generation tasks.",
-      "updatedRel": "2y",
-      "updatedTitle": "September 3, 2024",
-      "updatedIso": "2024-09-03T00:00:00.000Z",
-      "capabilities": [],
-      "isCloud": false,
-      "isLocal": true,
-      "pullsText": "1.4M",
-      "pullsCount": 1390219,
-      "tagCount": 17,
-      "contextWindow": "32K",
-      "contextTokens": 32000,
-      "paramSizes": [
-        "22b"
-      ],
-      "popularRank": 172,
-      "tags": [
-        {
-          "tag": "codestral:22b",
-          "shortTag": "22b",
-          "isLatest": true,
-          "isCloud": false,
-          "sizeGB": 13,
-          "minSizeGB": 13,
-          "sizeText": "13GB",
-          "contextWindow": "32K"
-        },
-        {
-          "tag": "codestral:latest",
-          "shortTag": "latest",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 13,
-          "minSizeGB": 13,
-          "sizeText": "13GB",
-          "contextWindow": "32K"
-        },
-        {
-          "tag": "codestral:v0.1",
-          "shortTag": "v0.1",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 13,
-          "minSizeGB": 13,
-          "sizeText": "13GB",
-          "contextWindow": "32K"
-        },
-        {
-          "tag": "codestral:22b-v0.1-q2_K",
-          "shortTag": "22b-v0.1-q2_K",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 8.3,
-          "minSizeGB": 8.3,
-          "sizeText": "8.3GB",
-          "contextWindow": "32K"
-        },
-        {
-          "tag": "codestral:22b-v0.1-q3_K_S",
-          "shortTag": "22b-v0.1-q3_K_S",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 9.6,
-          "minSizeGB": 9.6,
-          "sizeText": "9.6GB",
-          "contextWindow": "32K"
-        },
-        {
-          "tag": "codestral:22b-v0.1-q3_K_M",
-          "shortTag": "22b-v0.1-q3_K_M",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 11,
-          "minSizeGB": 11,
-          "sizeText": "11GB",
-          "contextWindow": "32K"
-        },
-        {
-          "tag": "codestral:22b-v0.1-q3_K_L",
-          "shortTag": "22b-v0.1-q3_K_L",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 12,
-          "minSizeGB": 12,
-          "sizeText": "12GB",
-          "contextWindow": "32K"
-        }
-      ],
-      "hasLocal": true,
-      "hasCloud": false,
-      "defaultTag": "codestral:22b",
-      "defaultSizeGB": 13,
-      "defaultSizeText": "13GB"
-    },
-    {
       "id": "glm4",
       "name": "glm4",
       "description": "A strong multi-lingual general language model with competitive performance to Llama 3.",
@@ -15016,14 +14842,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1303532,
+      "pullsCount": 1304059,
       "tagCount": 32,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "9b"
       ],
-      "popularRank": 173,
+      "popularRank": 171,
       "tags": [
         {
           "tag": "glm4:9b",
@@ -15113,6 +14939,103 @@
       "defaultSizeText": "5.5GB"
     },
     {
+      "id": "codestral",
+      "name": "codestral",
+      "description": "Codestral is Mistral AI’s first-ever code model designed for code generation tasks.",
+      "updatedRel": "2y",
+      "updatedTitle": "September 3, 2024",
+      "updatedIso": "2024-09-03T00:00:00.000Z",
+      "capabilities": [],
+      "isCloud": false,
+      "isLocal": true,
+      "pullsText": "1.4M",
+      "pullsCount": 1390651,
+      "tagCount": 17,
+      "contextWindow": "32K",
+      "contextTokens": 32000,
+      "paramSizes": [
+        "22b"
+      ],
+      "popularRank": 172,
+      "tags": [
+        {
+          "tag": "codestral:22b",
+          "shortTag": "22b",
+          "isLatest": true,
+          "isCloud": false,
+          "sizeGB": 13,
+          "minSizeGB": 13,
+          "sizeText": "13GB",
+          "contextWindow": "32K"
+        },
+        {
+          "tag": "codestral:latest",
+          "shortTag": "latest",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 13,
+          "minSizeGB": 13,
+          "sizeText": "13GB",
+          "contextWindow": "32K"
+        },
+        {
+          "tag": "codestral:v0.1",
+          "shortTag": "v0.1",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 13,
+          "minSizeGB": 13,
+          "sizeText": "13GB",
+          "contextWindow": "32K"
+        },
+        {
+          "tag": "codestral:22b-v0.1-q2_K",
+          "shortTag": "22b-v0.1-q2_K",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 8.3,
+          "minSizeGB": 8.3,
+          "sizeText": "8.3GB",
+          "contextWindow": "32K"
+        },
+        {
+          "tag": "codestral:22b-v0.1-q3_K_S",
+          "shortTag": "22b-v0.1-q3_K_S",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 9.6,
+          "minSizeGB": 9.6,
+          "sizeText": "9.6GB",
+          "contextWindow": "32K"
+        },
+        {
+          "tag": "codestral:22b-v0.1-q3_K_M",
+          "shortTag": "22b-v0.1-q3_K_M",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 11,
+          "minSizeGB": 11,
+          "sizeText": "11GB",
+          "contextWindow": "32K"
+        },
+        {
+          "tag": "codestral:22b-v0.1-q3_K_L",
+          "shortTag": "22b-v0.1-q3_K_L",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 12,
+          "minSizeGB": 12,
+          "sizeText": "12GB",
+          "contextWindow": "32K"
+        }
+      ],
+      "hasLocal": true,
+      "hasCloud": false,
+      "defaultTag": "codestral:22b",
+      "defaultSizeGB": 13,
+      "defaultSizeText": "13GB"
+    },
+    {
       "id": "exaone-deep",
       "name": "exaone-deep",
       "description": "EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research.",
@@ -15122,8 +15045,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "800.4K",
-      "pullsCount": 800438,
+      "pullsText": "800.8K",
+      "pullsCount": 800771,
       "tagCount": 13,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -15132,7 +15055,7 @@
         "7.8b",
         "32b"
       ],
-      "popularRank": 174,
+      "popularRank": 173,
       "tags": [
         {
           "tag": "exaone-deep:7.8b",
@@ -15212,7 +15135,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1161577,
+      "pullsCount": 1162116,
       "tagCount": 67,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -15220,7 +15143,7 @@
         "1.5b",
         "9b"
       ],
-      "popularRank": 175,
+      "popularRank": 174,
       "tags": [
         {
           "tag": "yi-coder:9b",
@@ -15310,14 +15233,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.6M",
-      "pullsCount": 1640728,
+      "pullsCount": 1641024,
       "tagCount": 15,
       "contextWindow": "2K",
       "contextTokens": 2000,
       "paramSizes": [
         "2.7b"
       ],
-      "popularRank": 176,
+      "popularRank": 175,
       "tags": [
         {
           "tag": "dolphin-phi:2.7b",
@@ -15419,7 +15342,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1M",
-      "pullsCount": 1010677,
+      "pullsCount": 1011171,
       "tagCount": 33,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -15427,7 +15350,7 @@
         "1b",
         "3b"
       ],
-      "popularRank": 177,
+      "popularRank": 176,
       "tags": [
         {
           "tag": "granite3-moe:1b",
@@ -15517,7 +15440,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1257667,
+      "pullsCount": 1258191,
       "tagCount": 34,
       "contextWindow": "160K",
       "contextTokens": 160000,
@@ -15525,7 +15448,7 @@
         "16b",
         "236b"
       ],
-      "popularRank": 178,
+      "popularRank": 177,
       "tags": [
         {
           "tag": "deepseek-v2:16b",
@@ -15605,7 +15528,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1M",
-      "pullsCount": 1006207,
+      "pullsCount": 1006633,
       "tagCount": 49,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -15614,7 +15537,7 @@
         "9b",
         "27b"
       ],
-      "popularRank": 179,
+      "popularRank": 178,
       "tags": [
         {
           "tag": "shieldgemma:9b",
@@ -15694,14 +15617,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.6M",
-      "pullsCount": 1579123,
+      "pullsCount": 1579367,
       "tagCount": 18,
       "contextWindow": "2K",
       "contextTokens": 2000,
       "paramSizes": [
         "2.7b"
       ],
-      "popularRank": 180,
+      "popularRank": 179,
       "tags": [
         {
           "tag": "phi:2.7b",
@@ -15791,14 +15714,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1086088,
+      "pullsCount": 1086553,
       "tagCount": 17,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "3.8b"
       ],
-      "popularRank": 181,
+      "popularRank": 180,
       "tags": [
         {
           "tag": "phi3.5:3.8b",
@@ -15898,7 +15821,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.6M",
-      "pullsCount": 1622745,
+      "pullsCount": 1623874,
       "tagCount": 174,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -15907,7 +15830,7 @@
         "9b",
         "34b"
       ],
-      "popularRank": 182,
+      "popularRank": 181,
       "tags": [
         {
           "tag": "yi:6b",
@@ -15977,7 +15900,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1116534,
+      "pullsCount": 1117164,
       "tagCount": 65,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -15987,7 +15910,7 @@
         "7b",
         "20b"
       ],
-      "popularRank": 183,
+      "popularRank": 182,
       "tags": [
         {
           "tag": "internlm2:7b",
@@ -16059,14 +15982,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1216723,
+      "pullsCount": 1220183,
       "tagCount": 4,
       "contextWindow": "4K",
       "contextTokens": 4000,
       "paramSizes": [
         "3.8b"
       ],
-      "popularRank": 184,
+      "popularRank": 183,
       "tags": [
         {
           "tag": "llava-phi3:3.8b",
@@ -16125,8 +16048,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "985.4K",
-      "pullsCount": 985376,
+      "pullsText": "985.8K",
+      "pullsCount": 985804,
       "tagCount": 33,
       "contextWindow": "250K",
       "contextTokens": 250000,
@@ -16134,7 +16057,7 @@
         "0.5b",
         "1.5b"
       ],
-      "popularRank": 185,
+      "popularRank": 184,
       "tags": [
         {
           "tag": "reader-lm:1.5b",
@@ -16224,7 +16147,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1245509,
+      "pullsCount": 1245943,
       "tagCount": 22,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -16232,7 +16155,7 @@
         "7b",
         "8x22b"
       ],
-      "popularRank": 186,
+      "popularRank": 185,
       "tags": [
         {
           "tag": "wizardlm2:7b",
@@ -16322,7 +16245,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1154755,
+      "pullsCount": 1155202,
       "tagCount": 33,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -16330,7 +16253,7 @@
         "8b",
         "35b"
       ],
-      "popularRank": 187,
+      "popularRank": 186,
       "tags": [
         {
           "tag": "aya:8b",
@@ -16422,7 +16345,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1055668,
+      "pullsCount": 1056000,
       "tagCount": 33,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -16430,7 +16353,7 @@
         "8b",
         "70b"
       ],
-      "popularRank": 188,
+      "popularRank": 187,
       "tags": [
         {
           "tag": "llama3-groq-tool-use:8b",
@@ -16520,14 +16443,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1167159,
+      "pullsCount": 1167540,
       "tagCount": 30,
       "contextWindow": "64K",
       "contextTokens": 64000,
       "paramSizes": [
         "7b"
       ],
-      "popularRank": 189,
+      "popularRank": 188,
       "tags": [
         {
           "tag": "codeqwen:7b",
@@ -16587,65 +16510,6 @@
       "defaultSizeText": "4.2GB"
     },
     {
-      "id": "paraphrase-multilingual",
-      "name": "paraphrase-multilingual",
-      "description": "Sentence-transformers model that can be used for tasks like clustering or semantic search.",
-      "updatedRel": "2y",
-      "updatedTitle": "August 7, 2024",
-      "updatedIso": "2024-08-07T00:00:00.000Z",
-      "capabilities": [
-        "embedding"
-      ],
-      "isCloud": false,
-      "isLocal": true,
-      "pullsText": "970.3K",
-      "pullsCount": 970261,
-      "tagCount": 3,
-      "contextWindow": "",
-      "contextTokens": 0,
-      "paramSizes": [
-        "278m"
-      ],
-      "popularRank": 190,
-      "tags": [
-        {
-          "tag": "paraphrase-multilingual:278m",
-          "shortTag": "278m",
-          "isLatest": true,
-          "isCloud": false,
-          "sizeGB": 0.55,
-          "minSizeGB": 0.55,
-          "sizeText": "563MB",
-          "contextWindow": ""
-        },
-        {
-          "tag": "paraphrase-multilingual:latest",
-          "shortTag": "latest",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 0.55,
-          "minSizeGB": 0.55,
-          "sizeText": "563MB",
-          "contextWindow": ""
-        },
-        {
-          "tag": "paraphrase-multilingual:278m-mpnet-base-v2-fp16",
-          "shortTag": "278m-mpnet-base-v2-fp16",
-          "isLatest": false,
-          "isCloud": false,
-          "sizeGB": 0.55,
-          "minSizeGB": 0.55,
-          "sizeText": "563MB",
-          "contextWindow": ""
-        }
-      ],
-      "hasLocal": true,
-      "hasCloud": false,
-      "defaultTag": "paraphrase-multilingual:278m",
-      "defaultSizeGB": 0.55,
-      "defaultSizeText": "563MB"
-    },
-    {
       "id": "mistral-openorca",
       "name": "mistral-openorca",
       "description": "Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset.",
@@ -16656,14 +16520,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.5M",
-      "pullsCount": 1491405,
+      "pullsCount": 1494655,
       "tagCount": 17,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [
         "7b"
       ],
-      "popularRank": 191,
+      "popularRank": 189,
       "tags": [
         {
           "tag": "mistral-openorca:7b",
@@ -16753,6 +16617,65 @@
       "defaultSizeText": "4.1GB"
     },
     {
+      "id": "paraphrase-multilingual",
+      "name": "paraphrase-multilingual",
+      "description": "Sentence-transformers model that can be used for tasks like clustering or semantic search.",
+      "updatedRel": "2y",
+      "updatedTitle": "August 7, 2024",
+      "updatedIso": "2024-08-07T00:00:00.000Z",
+      "capabilities": [
+        "embedding"
+      ],
+      "isCloud": false,
+      "isLocal": true,
+      "pullsText": "970.6K",
+      "pullsCount": 970570,
+      "tagCount": 3,
+      "contextWindow": "",
+      "contextTokens": 0,
+      "paramSizes": [
+        "278m"
+      ],
+      "popularRank": 190,
+      "tags": [
+        {
+          "tag": "paraphrase-multilingual:278m",
+          "shortTag": "278m",
+          "isLatest": true,
+          "isCloud": false,
+          "sizeGB": 0.55,
+          "minSizeGB": 0.55,
+          "sizeText": "563MB",
+          "contextWindow": ""
+        },
+        {
+          "tag": "paraphrase-multilingual:latest",
+          "shortTag": "latest",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 0.55,
+          "minSizeGB": 0.55,
+          "sizeText": "563MB",
+          "contextWindow": ""
+        },
+        {
+          "tag": "paraphrase-multilingual:278m-mpnet-base-v2-fp16",
+          "shortTag": "278m-mpnet-base-v2-fp16",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 0.55,
+          "minSizeGB": 0.55,
+          "sizeText": "563MB",
+          "contextWindow": ""
+        }
+      ],
+      "hasLocal": true,
+      "hasCloud": false,
+      "defaultTag": "paraphrase-multilingual:278m",
+      "defaultSizeGB": 0.55,
+      "defaultSizeText": "563MB"
+    },
+    {
       "id": "openchat",
       "name": "openchat",
       "description": "A family of open-source models trained on a wide variety of data, surpassing ChatGPT on various benchmarks. Updated to version 3.5-0106.",
@@ -16763,14 +16686,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.4M",
-      "pullsCount": 1414289,
+      "pullsCount": 1414705,
       "tagCount": 50,
       "contextWindow": "8K",
       "contextTokens": 8000,
       "paramSizes": [
         "7b"
       ],
-      "popularRank": 192,
+      "popularRank": 191,
       "tags": [
         {
           "tag": "openchat:7b",
@@ -16870,7 +16793,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1088247,
+      "pullsCount": 1088590,
       "tagCount": 35,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -16878,7 +16801,7 @@
         "8b",
         "70b"
       ],
-      "popularRank": 193,
+      "popularRank": 192,
       "tags": [
         {
           "tag": "llama3-chatqa:8b",
@@ -16968,7 +16891,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1330012,
+      "pullsCount": 1330642,
       "tagCount": 64,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -16976,7 +16899,7 @@
         "7b",
         "67b"
       ],
-      "popularRank": 194,
+      "popularRank": 193,
       "tags": [
         {
           "tag": "deepseek-llm:7b",
@@ -17066,7 +16989,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1057530,
+      "pullsCount": 1057876,
       "tagCount": 35,
       "contextWindow": "1M",
       "contextTokens": 1000000,
@@ -17074,7 +16997,7 @@
         "8b",
         "70b"
       ],
-      "popularRank": 195,
+      "popularRank": 194,
       "tags": [
         {
           "tag": "llama3-gradient:8b",
@@ -17144,7 +17067,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1177311,
+      "pullsCount": 1177908,
       "tagCount": 84,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -17152,7 +17075,7 @@
         "1.6b",
         "12b"
       ],
-      "popularRank": 196,
+      "popularRank": 195,
       "tags": [
         {
           "tag": "stablelm2:1.6b",
@@ -17222,7 +17145,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1320671,
+      "pullsCount": 1321091,
       "tagCount": 40,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -17230,7 +17153,7 @@
         "7b",
         "141b"
       ],
-      "popularRank": 197,
+      "popularRank": 196,
       "tags": [
         {
           "tag": "zephyr:7b",
@@ -17320,14 +17243,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1259175,
+      "pullsCount": 1259891,
       "tagCount": 50,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [
         "7b"
       ],
-      "popularRank": 198,
+      "popularRank": 197,
       "tags": [
         {
           "tag": "neural-chat:7b",
@@ -17427,7 +17350,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1084663,
+      "pullsCount": 1085229,
       "tagCount": 35,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -17435,7 +17358,7 @@
         "7b",
         "15b"
       ],
-      "popularRank": 199,
+      "popularRank": 198,
       "tags": [
         {
           "tag": "dolphincoder:7b",
@@ -17525,14 +17448,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1126462,
+      "pullsCount": 1126825,
       "tagCount": 36,
       "contextWindow": "16K",
       "contextTokens": 16000,
       "paramSizes": [
         "3b"
       ],
-      "popularRank": 200,
+      "popularRank": 199,
       "tags": [
         {
           "tag": "stable-code:3b",
@@ -17612,7 +17535,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1349159,
+      "pullsCount": 1349612,
       "tagCount": 49,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -17621,7 +17544,7 @@
         "13b",
         "30b"
       ],
-      "popularRank": 201,
+      "popularRank": 200,
       "tags": [
         {
           "tag": "wizard-vicuna-uncensored:7b",
@@ -17701,7 +17624,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1343511,
+      "pullsCount": 1344255,
       "tagCount": 111,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -17710,7 +17633,7 @@
         "13b",
         "33b"
       ],
-      "popularRank": 202,
+      "popularRank": 201,
       "tags": [
         {
           "tag": "vicuna:7b",
@@ -17790,7 +17713,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1146992,
+      "pullsCount": 1147331,
       "tagCount": 33,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -17798,7 +17721,7 @@
         "10.7b",
         "34b"
       ],
-      "popularRank": 203,
+      "popularRank": 202,
       "tags": [
         {
           "tag": "nous-hermes2:10.7b",
@@ -17887,8 +17810,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "698.6K",
-      "pullsCount": 698603,
+      "pullsText": "699K",
+      "pullsCount": 699036,
       "tagCount": 9,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -17896,7 +17819,7 @@
         "1.5b",
         "8b"
       ],
-      "popularRank": 204,
+      "popularRank": 203,
       "tags": [
         {
           "tag": "opencoder:8b",
@@ -17987,15 +17910,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "749.1K",
-      "pullsCount": 749051,
+      "pullsText": "749.3K",
+      "pullsCount": 749305,
       "tagCount": 17,
       "contextWindow": "4K",
       "contextTokens": 4000,
       "paramSizes": [
         "4b"
       ],
-      "popularRank": 205,
+      "popularRank": 204,
       "tags": [
         {
           "tag": "nemotron-mini:4b",
@@ -18095,7 +18018,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.3M",
-      "pullsCount": 1284402,
+      "pullsCount": 1285093,
       "tagCount": 63,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -18103,7 +18026,7 @@
         "7b",
         "13b"
       ],
-      "popularRank": 206,
+      "popularRank": 205,
       "tags": [
         {
           "tag": "nous-hermes:7b",
@@ -18193,7 +18116,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1240294,
+      "pullsCount": 1241847,
       "tagCount": 38,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -18202,7 +18125,7 @@
         "40b",
         "180b"
       ],
-      "popularRank": 207,
+      "popularRank": 206,
       "tags": [
         {
           "tag": "falcon:7b",
@@ -18281,8 +18204,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "619.5K",
-      "pullsCount": 619549,
+      "pullsText": "620K",
+      "pullsCount": 620014,
       "tagCount": 13,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -18291,7 +18214,7 @@
         "7.8b",
         "32b"
       ],
-      "popularRank": 208,
+      "popularRank": 207,
       "tags": [
         {
           "tag": "exaone3.5:7.8b",
@@ -18371,7 +18294,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.2M",
-      "pullsCount": 1207587,
+      "pullsCount": 1208230,
       "tagCount": 35,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -18379,7 +18302,7 @@
         "7b",
         "13b"
       ],
-      "popularRank": 209,
+      "popularRank": 208,
       "tags": [
         {
           "tag": "llama2-chinese:7b",
@@ -18470,15 +18393,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "656.4K",
-      "pullsCount": 656358,
+      "pullsText": "656.6K",
+      "pullsCount": 656597,
       "tagCount": 17,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "70b"
       ],
-      "popularRank": 210,
+      "popularRank": 209,
       "tags": [
         {
           "tag": "nemotron:70b",
@@ -18578,7 +18501,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1093546,
+      "pullsCount": 1094111,
       "tagCount": 80,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -18586,7 +18509,7 @@
         "7b",
         "13b"
       ],
-      "popularRank": 211,
+      "popularRank": 210,
       "tags": [
         {
           "tag": "xwinlm:7b",
@@ -18677,15 +18600,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "620.6K",
-      "pullsCount": 620620,
+      "pullsText": "620.8K",
+      "pullsCount": 620840,
       "tagCount": 17,
       "contextWindow": "32K",
       "contextTokens": 32000,
       "paramSizes": [
         "72b"
       ],
-      "popularRank": 212,
+      "popularRank": 211,
       "tags": [
         {
           "tag": "athene-v2:72b",
@@ -18785,14 +18708,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1M",
-      "pullsCount": 1014214,
+      "pullsCount": 1014535,
       "tagCount": 32,
       "contextWindow": "4K",
       "contextTokens": 4000,
       "paramSizes": [
         "10.7b"
       ],
-      "popularRank": 213,
+      "popularRank": 212,
       "tags": [
         {
           "tag": "solar:10.7b",
@@ -18892,14 +18815,14 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1M",
-      "pullsCount": 1037157,
+      "pullsCount": 1037497,
       "tagCount": 36,
       "contextWindow": "8K",
       "contextTokens": 8000,
       "paramSizes": [
         "7b"
       ],
-      "popularRank": 214,
+      "popularRank": 213,
       "tags": [
         {
           "tag": "starling-lm:7b",
@@ -18979,7 +18902,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1065060,
+      "pullsCount": 1065558,
       "tagCount": 67,
       "contextWindow": "64K",
       "contextTokens": 64000,
@@ -18987,7 +18910,7 @@
         "7b",
         "13b"
       ],
-      "popularRank": 215,
+      "popularRank": 214,
       "tags": [
         {
           "tag": "yarn-llama2:7b",
@@ -19078,15 +19001,15 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "848.1K",
-      "pullsCount": 848104,
+      "pullsText": "848.5K",
+      "pullsCount": 848459,
       "tagCount": 21,
       "contextWindow": "128K",
       "contextTokens": 128000,
       "paramSizes": [
         "104b"
       ],
-      "popularRank": 216,
+      "popularRank": 215,
       "tags": [
         {
           "tag": "command-r-plus:104b",
@@ -19176,6 +19099,83 @@
       "defaultSizeText": "59GB"
     },
     {
+      "id": "cogito-2.1",
+      "name": "cogito-2.1",
+      "description": "The Cogito v2.1 LLMs are instruction tuned generative models. All models are released under MIT license for commercial use.",
+      "updatedRel": "12mo",
+      "updatedTitle": "November 19, 2025",
+      "updatedIso": "2025-11-19T00:00:00.000Z",
+      "capabilities": [],
+      "isCloud": false,
+      "isLocal": true,
+      "pullsText": "244.7K",
+      "pullsCount": 244665,
+      "tagCount": 5,
+      "contextWindow": "160K",
+      "contextTokens": 160000,
+      "paramSizes": [
+        "671b"
+      ],
+      "popularRank": 216,
+      "tags": [
+        {
+          "tag": "cogito-2.1:671b",
+          "shortTag": "671b",
+          "isLatest": true,
+          "isCloud": false,
+          "sizeGB": 1331.2,
+          "minSizeGB": 1331.2,
+          "sizeText": "1.3TB",
+          "contextWindow": "160K"
+        },
+        {
+          "tag": "cogito-2.1:latest",
+          "shortTag": "latest",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 1331.2,
+          "minSizeGB": 1331.2,
+          "sizeText": "1.3TB",
+          "contextWindow": "160K"
+        },
+        {
+          "tag": "cogito-2.1:671b-q4_K_M",
+          "shortTag": "671b-q4_K_M",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 404,
+          "minSizeGB": 404,
+          "sizeText": "404GB",
+          "contextWindow": "160K"
+        },
+        {
+          "tag": "cogito-2.1:671b-q8_0",
+          "shortTag": "671b-q8_0",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 713,
+          "minSizeGB": 713,
+          "sizeText": "713GB",
+          "contextWindow": "160K"
+        },
+        {
+          "tag": "cogito-2.1:671b-fp16",
+          "shortTag": "671b-fp16",
+          "isLatest": false,
+          "isCloud": false,
+          "sizeGB": 1331.2,
+          "minSizeGB": 1331.2,
+          "sizeText": "1.3TB",
+          "contextWindow": "160K"
+        }
+      ],
+      "hasLocal": true,
+      "hasCloud": false,
+      "defaultTag": "cogito-2.1:671b",
+      "defaultSizeGB": 1331.2,
+      "defaultSizeText": "1.3TB"
+    },
+    {
       "id": "llama-pro",
       "name": "llama-pro",
       "description": "An expansion of Llama 2 that specializes in integrating both general language understanding and domain-specific knowledge, particularly in programming and mathematics.",
@@ -19185,8 +19185,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "960.7K",
-      "pullsCount": 960728,
+      "pullsText": "961.1K",
+      "pullsCount": 961050,
       "tagCount": 33,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -19282,8 +19282,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "485.8K",
-      "pullsCount": 485797,
+      "pullsText": "486.1K",
+      "pullsCount": 486073,
       "tagCount": 9,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -19381,7 +19381,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1078501,
+      "pullsCount": 1079008,
       "tagCount": 49,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -19488,7 +19488,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1.1M",
-      "pullsCount": 1124216,
+      "pullsCount": 1124912,
       "tagCount": 64,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -19576,8 +19576,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "722K",
-      "pullsCount": 721989,
+      "pullsText": "722.2K",
+      "pullsCount": 722207,
       "tagCount": 17,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -19683,8 +19683,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "995.8K",
-      "pullsCount": 995795,
+      "pullsText": "996.2K",
+      "pullsCount": 996220,
       "tagCount": 33,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -19781,8 +19781,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "644.1K",
-      "pullsCount": 644143,
+      "pullsText": "644.3K",
+      "pullsCount": 644338,
       "tagCount": 17,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -19890,8 +19890,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "927K",
-      "pullsCount": 926963,
+      "pullsText": "927.3K",
+      "pullsCount": 927301,
       "tagCount": 17,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -19997,8 +19997,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "939.2K",
-      "pullsCount": 939163,
+      "pullsText": "939.5K",
+      "pullsCount": 939522,
       "tagCount": 22,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -20096,7 +20096,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1M",
-      "pullsCount": 1037920,
+      "pullsCount": 1038321,
       "tagCount": 49,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -20202,8 +20202,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "949.5K",
-      "pullsCount": 949534,
+      "pullsText": "949.8K",
+      "pullsCount": 949849,
       "tagCount": 33,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -20309,8 +20309,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "589.1K",
-      "pullsCount": 589062,
+      "pullsText": "589.3K",
+      "pullsCount": 589273,
       "tagCount": 18,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -20406,8 +20406,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "441.7K",
-      "pullsCount": 441719,
+      "pullsText": "441.9K",
+      "pullsCount": 441876,
       "tagCount": 9,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -20505,7 +20505,7 @@
       "isCloud": false,
       "isLocal": true,
       "pullsText": "1M",
-      "pullsCount": 1010215,
+      "pullsCount": 1010626,
       "tagCount": 49,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -20595,8 +20595,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "506.4K",
-      "pullsCount": 506441,
+      "pullsText": "506.9K",
+      "pullsCount": 506863,
       "tagCount": 3,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -20652,8 +20652,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "993K",
-      "pullsCount": 992955,
+      "pullsText": "993.4K",
+      "pullsCount": 993425,
       "tagCount": 73,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -20777,8 +20777,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "942.7K",
-      "pullsCount": 942699,
+      "pullsText": "943K",
+      "pullsCount": 943009,
       "tagCount": 32,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -20884,8 +20884,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "560.7K",
-      "pullsCount": 560740,
+      "pullsText": "561K",
+      "pullsCount": 560960,
       "tagCount": 17,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -20991,8 +20991,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "593.6K",
-      "pullsCount": 593635,
+      "pullsText": "593.9K",
+      "pullsCount": 593924,
       "tagCount": 17,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -21098,8 +21098,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "760.5K",
-      "pullsCount": 760474,
+      "pullsText": "760.7K",
+      "pullsCount": 760710,
       "tagCount": 18,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -21195,8 +21195,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "587.8K",
-      "pullsCount": 587762,
+      "pullsText": "588.1K",
+      "pullsCount": 588074,
       "tagCount": 17,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -21302,8 +21302,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "333.6K",
-      "pullsCount": 333575,
+      "pullsText": "333.7K",
+      "pullsCount": 333739,
       "tagCount": 5,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -21379,8 +21379,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "446.2K",
-      "pullsCount": 446231,
+      "pullsText": "446.4K",
+      "pullsCount": 446424,
       "tagCount": 13,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -21470,8 +21470,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "436K",
-      "pullsCount": 435952,
+      "pullsText": "436.5K",
+      "pullsCount": 436470,
       "tagCount": 6,
       "contextWindow": "",
       "contextTokens": 0,
@@ -21560,8 +21560,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "553.1K",
-      "pullsCount": 553114,
+      "pullsText": "553.3K",
+      "pullsCount": 553312,
       "tagCount": 17,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -21667,8 +21667,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "432.4K",
-      "pullsCount": 432431,
+      "pullsText": "432.7K",
+      "pullsCount": 432654,
       "tagCount": 9,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -21765,8 +21765,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "568.7K",
-      "pullsCount": 568731,
+      "pullsText": "568.9K",
+      "pullsCount": 568926,
       "tagCount": 17,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -21875,8 +21875,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "181.1K",
-      "pullsCount": 181055,
+      "pullsText": "181.2K",
+      "pullsCount": 181185,
       "tagCount": 3,
       "contextWindow": "128K",
       "contextTokens": 128000,
@@ -21933,8 +21933,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "757.4K",
-      "pullsCount": 757418,
+      "pullsText": "757.6K",
+      "pullsCount": 757618,
       "tagCount": 17,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -22042,8 +22042,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "359.2K",
-      "pullsCount": 359156,
+      "pullsText": "359.4K",
+      "pullsCount": 359397,
       "tagCount": 5,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -22119,8 +22119,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "619.8K",
-      "pullsCount": 619798,
+      "pullsText": "620K",
+      "pullsCount": 620039,
       "tagCount": 18,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -22216,8 +22216,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "598.3K",
-      "pullsCount": 598281,
+      "pullsText": "598.5K",
+      "pullsCount": 598499,
       "tagCount": 19,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -22313,8 +22313,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "678.1K",
-      "pullsCount": 678111,
+      "pullsText": "678.3K",
+      "pullsCount": 678338,
       "tagCount": 18,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -22420,8 +22420,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "556.6K",
-      "pullsCount": 556567,
+      "pullsText": "556.8K",
+      "pullsCount": 556770,
       "tagCount": 17,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -22527,8 +22527,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "572K",
-      "pullsCount": 572003,
+      "pullsText": "572.2K",
+      "pullsCount": 572206,
       "tagCount": 18,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -22634,8 +22634,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "585.9K",
-      "pullsCount": 585902,
+      "pullsText": "586.1K",
+      "pullsCount": 586107,
       "tagCount": 18,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -22741,8 +22741,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "567.8K",
-      "pullsCount": 567828,
+      "pullsText": "568K",
+      "pullsCount": 568049,
       "tagCount": 18,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -22848,8 +22848,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "359.8K",
-      "pullsCount": 359785,
+      "pullsText": "360K",
+      "pullsCount": 359954,
       "tagCount": 10,
       "contextWindow": "8K",
       "contextTokens": 8000,
@@ -22946,8 +22946,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "566.9K",
-      "pullsCount": 566930,
+      "pullsText": "567.2K",
+      "pullsCount": 567227,
       "tagCount": 17,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -23053,8 +23053,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "626.2K",
-      "pullsCount": 626224,
+      "pullsText": "626.4K",
+      "pullsCount": 626448,
       "tagCount": 19,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -23160,8 +23160,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "552K",
-      "pullsCount": 551967,
+      "pullsText": "552.2K",
+      "pullsCount": 552166,
       "tagCount": 17,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -23267,8 +23267,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "598.2K",
-      "pullsCount": 598159,
+      "pullsText": "598.4K",
+      "pullsCount": 598365,
       "tagCount": 18,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -23376,8 +23376,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "252.1K",
-      "pullsCount": 252076,
+      "pullsText": "252.3K",
+      "pullsCount": 252299,
       "tagCount": 5,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -23453,8 +23453,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "530.2K",
-      "pullsCount": 530189,
+      "pullsText": "530.4K",
+      "pullsCount": 530387,
       "tagCount": 16,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -23560,8 +23560,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "510.9K",
-      "pullsCount": 510916,
+      "pullsText": "511.2K",
+      "pullsCount": 511217,
       "tagCount": 16,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -23675,8 +23675,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "279.9K",
-      "pullsCount": 279874,
+      "pullsText": "280.1K",
+      "pullsCount": 280138,
       "tagCount": 5,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -23752,8 +23752,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "545.4K",
-      "pullsCount": 545422,
+      "pullsText": "545.6K",
+      "pullsCount": 545614,
       "tagCount": 17,
       "contextWindow": "2K",
       "contextTokens": 2000,
@@ -23859,8 +23859,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "537.6K",
-      "pullsCount": 537642,
+      "pullsText": "537.8K",
+      "pullsCount": 537836,
       "tagCount": 17,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -23966,8 +23966,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "389.3K",
-      "pullsCount": 389326,
+      "pullsText": "389.6K",
+      "pullsCount": 389563,
       "tagCount": 7,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -24063,8 +24063,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "315K",
-      "pullsCount": 315032,
+      "pullsText": "315.3K",
+      "pullsCount": 315253,
       "tagCount": 7,
       "contextWindow": "4K",
       "contextTokens": 4000,
@@ -24162,8 +24162,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "218.8K",
-      "pullsCount": 218772,
+      "pullsText": "218.9K",
+      "pullsCount": 218896,
       "tagCount": 5,
       "contextWindow": "16K",
       "contextTokens": 16000,
@@ -24241,8 +24241,8 @@
       ],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "309.9K",
-      "pullsCount": 309945,
+      "pullsText": "310.2K",
+      "pullsCount": 310172,
       "tagCount": 3,
       "contextWindow": "",
       "contextTokens": 0,
@@ -24298,8 +24298,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "232.9K",
-      "pullsCount": 232945,
+      "pullsText": "233.2K",
+      "pullsCount": 233163,
       "tagCount": 5,
       "contextWindow": "32K",
       "contextTokens": 32000,
@@ -24375,8 +24375,8 @@
       "capabilities": [],
       "isCloud": false,
       "isLocal": true,
-      "pullsText": "348.7K",
-      "pullsCount": 348681,
+      "pullsText": "349.1K",
+      "pullsCount": 349124,
       "tagCount": 7,
       "contextWindow": "2K",
       "contextTokens": 2000,
